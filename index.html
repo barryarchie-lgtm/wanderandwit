@@ -1,13 +1,21 @@
+<!--
+  /*-------------------------------------------------------------------*/
+             WANDER & WIT - SETUP CHECKLIST                        
+    Search for each keyword below and follow the instructions:        
+  
+    Once both are filled in, this site is ready to upload          
+    to Netlify and go live at wanderandwit.org 🚀                  
+  /*-------------------------------------------------------------------*/
+-->
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wander & Wit — Travel · Hidden Gems · Smart Tips</title>
+<title>Wander & Wit - Travel &#183; Hidden Gems &#183; Smart Tips</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" crossorigin rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:ital@0;1&family=Jost:wght@300;400;500;600&display=swap&display=swap" crossorigin rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -19,370 +27,493 @@
     --charcoal: #2C2825;
     --sage:     #7A9178;
     --hhh:      #1A1A2E;
-    --serif:    'Playfair Display', Georgia, serif;
-    --bask:     'Libre Baskerville', Georgia, serif;
-    --sans:     'Jost', sans-serif;
+    --serif:    'Playfair Display', 'Georgia', serif;
+    --bask:     'Libre Baskerville', 'Georgia', serif;
+    --sans:     'Jost', 'Helvetica Neue', Arial, sans-serif;
   }
   html { scroll-behavior: smooth; }
   body { background: var(--cream); color: var(--charcoal); font-family: var(--sans); font-weight: 300; line-height: 1.75; overflow-x: hidden; }
   a { color: inherit; text-decoration: none; }
   a:hover { color: inherit; }
 
-/* NAV */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.3rem 3rem; transition: background 0.35s, box-shadow 0.35s; }
-nav.scrolled { background: rgba(250,248,244,0.96); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(–mist); }
-.nav-logo { font-family: var(–serif); font-style: italic; font-size: 1.2rem; color: var(–charcoal) !important; text-decoration: none; }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { font-size: 0.71rem; letter-spacing: 0.17em; text-transform: uppercase; color: var(–sienna); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover { color: var(–charcoal); }
-.nav-cta { display: flex; gap: 0.7rem; }
-.nav-cta a { font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; padding: 0.42rem 1rem; transition: all 0.2s; }
-.btn-outline { border: 1px solid var(–dusk); color: var(–sienna); }
-.btn-outline:hover { background: var(–charcoal); color: var(–cream); border-color: var(–charcoal); }
-.btn-filled { background: var(–sienna); color: white; }
-.btn-filled:hover { background: var(–charcoal); }
-.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0; }
-.hamburger span { display: block; width: 22px; height: 1px; background: var(–charcoal); }
-.mobile-menu { display: none; position: fixed; inset: 0; background: var(–cream); z-index: 199; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem; }
-.mobile-menu.open { display: flex; }
-.mobile-menu .mm-link { font-family: var(–serif); font-style: italic; font-size: 1.8rem; color: var(–charcoal); text-decoration: none; }
-.mob-ctas { display: flex; gap: 0.8rem; margin-top: 0.5rem; flex-wrap: wrap; justify-content: center; }
-.mob-ctas a { padding: 0.6rem 1.4rem; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-style: normal; font-family: var(–sans); text-decoration: none; }
-.mob-social { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
-.mob-social a { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-family: var(–sans); color: var(–sienna); text-decoration: none; }
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 1.3rem 3rem; transition: background 0.35s, box-shadow 0.35s; }
+  nav.scrolled { background: rgba(250,248,244,0.96); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--mist); }
+  .nav-logo { font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--charcoal) !important; text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.71rem; letter-spacing: 0.17em; text-transform: uppercase; color: var(--sienna); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--charcoal); }
+  .nav-cta { display: flex; gap: 0.7rem; }
+  .nav-cta a { font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; padding: 0.42rem 1rem; transition: all 0.2s; }
+  .btn-outline { border: 1px solid var(--dusk); color: var(--sienna); }
+  .btn-outline:hover { background: var(--charcoal); color: var(--cream); border-color: var(--charcoal); }
+  .btn-filled { background: var(--sienna); color: white; }
+  .btn-filled:hover { background: var(--charcoal); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0; }
+  .hamburger span { display: block; width: 22px; height: 1px; background: var(--charcoal); }
+  .mobile-menu { display: none; position: fixed; inset: 0; background: var(--cream); z-index: 199; flex-direction: column; align-items: center; justify-content: center; gap: 1.6rem; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu .mm-link { font-family: var(--serif); font-style: italic; font-size: 1.8rem; color: var(--charcoal); text-decoration: none; }
+  .mob-ctas { display: flex; gap: 0.8rem; margin-top: 0.5rem; flex-wrap: wrap; justify-content: center; }
+  .mob-ctas a { padding: 0.6rem 1.4rem; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-style: normal; font-family: var(--sans); text-decoration: none; }
+  .mob-social { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
+  .mob-social a { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-family: var(--sans); color: var(--sienna); text-decoration: none; }
 
-/* SEASONAL BANNER */
-.seasonal-banner { background: #E8C76A; color: var(–charcoal); text-align: center; padding: 0.6rem 2rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; display: none; }
-.seasonal-banner a { color: inherit; font-weight: 600; }
-.seasonal-banner.show { display: block; }
+  /* SEASONAL BANNER */
+  .seasonal-banner { background: #E8C76A; color: var(--charcoal); text-align: center; padding: 0.6rem 2rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; display: none; }
+  .seasonal-banner a { color: inherit; font-weight: 600; }
+  .seasonal-banner.show { display: block; }
 
-/* HERO */
-.hero { min-height: 100vh; background: var(–sand); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 9rem 2rem 4rem; position: relative; overflow: hidden; }
-.hero-wm { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: var(–serif); font-size: clamp(8rem,20vw,18rem); color: rgba(196,180,154,0.11); white-space: nowrap; pointer-events: none; user-select: none; letter-spacing: -0.03em; }
-.hero-pill { display: inline-flex; align-items: center; gap: 0.6rem; background: white; border: 1px solid var(–mist); padding: 0.42rem 1.2rem; border-radius: 100px; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(–sienna); margin-bottom: 2rem; position: relative; }
-.hero-pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(–sage); }
-.hero h1 { font-family: var(–serif); font-weight: 400; font-size: clamp(3.2rem,9vw,7.5rem); line-height: 1.0; letter-spacing: -0.02em; color: var(–charcoal); margin-bottom: 1.4rem; position: relative; }
-.hero h1 em { font-style: italic; color: var(–sienna); }
-.hero-sub { font-family: var(–bask); font-style: italic; font-size: 1.05rem; color: var(–sienna); max-width: 44ch; line-height: 1.8; margin-bottom: 2.8rem; position: relative; }
-.hero-pillars { display: flex; border: 1px solid var(–dusk); overflow: hidden; position: relative; margin-bottom: 3rem; }
-.hero-pillar { padding: 0.75rem 2rem; font-size: 0.71rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(–sienna) !important; text-decoration: none; transition: background 0.2s, color 0.2s; border-right: 1px solid var(–dusk); white-space: nowrap; }
-.hero-pillar:last-child { border-right: none; }
-.hero-pillar:hover { background: var(–charcoal); color: var(–cream); }
-.hero-social { display: flex; gap: 2rem; align-items: center; position: relative; padding-top: 2rem; border-top: 1px solid var(–mist); flex-wrap: wrap; justify-content: center; }
-.hero-social a { display: flex; align-items: center; gap: 0.5rem; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(–dusk); text-decoration: none; transition: color 0.2s; }
-.hero-social a:hover { color: var(–charcoal); }
-.s-icon { width: 15px; height: 15px; flex-shrink: 0; }
+  /* HERO */
+  .hero { min-height: 100vh; background: var(--sand); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 9rem 2rem 4rem; position: relative; overflow: hidden; }
+  .hero-wm { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: var(--serif); font-size: clamp(8rem,20vw,18rem); color: rgba(196,180,154,0.11); white-space: nowrap; pointer-events: none; user-select: none; letter-spacing: -0.03em; }
+  .hero-pill { display: inline-flex; align-items: center; gap: 0.6rem; background: white; border: 1px solid var(--mist); padding: 0.42rem 1.2rem; border-radius: 100px; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sienna); margin-bottom: 2rem; position: relative; }
+  .hero-pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); }
+  .hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(3.2rem,9vw,7.5rem); line-height: 1.0; letter-spacing: -0.02em; color: var(--charcoal); margin-bottom: 1.4rem; position: relative; }
+  .hero h1 em { font-style: italic; color: var(--sienna); }
+  .hero-sub { font-family: var(--bask); font-style: italic; font-size: 1.05rem; color: var(--sienna); max-width: 44ch; line-height: 1.8; margin-bottom: 2.8rem; position: relative; }
+  .hero-pillars { display: flex; border: 1px solid var(--dusk); overflow: hidden; position: relative; margin-bottom: 3rem; }
+  .hero-pillar { padding: 0.75rem 2rem; font-size: 0.71rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sienna) !important; text-decoration: none; transition: background 0.2s, color 0.2s; border-right: 1px solid var(--dusk); white-space: nowrap; }
+  .hero-pillar:last-child { border-right: none; }
+  .hero-pillar:hover { background: var(--charcoal); color: var(--cream); }
+  .hero-social { display: flex; gap: 2rem; align-items: center; position: relative; padding-top: 2rem; border-top: 1px solid var(--mist); flex-wrap: wrap; justify-content: center; }
+  .hero-social a { display: flex; align-items: center; gap: 0.5rem; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dusk); text-decoration: none; transition: color 0.2s; }
+  .hero-social a:hover { color: var(--charcoal); }
+  .s-icon { width: 15px; height: 15px; flex-shrink: 0; }
 
-/* PILLAR BAND */
-.pillar-band { background: var(–charcoal); padding: 1.2rem 3rem; display: flex; justify-content: center; gap: 0; overflow-x: auto; }
-.pillar-tab { padding: 0.65rem 2.5rem; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); text-decoration: none; border: 1px solid rgba(255,255,255,0.1); margin-right: -1px; transition: all 0.2s; white-space: nowrap; }
-.pillar-tab:hover { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.2); }
+  /* PILLAR BAND */
+  .pillar-band { background: var(--charcoal); padding: 1.2rem 3rem; display: flex; justify-content: center; gap: 0; overflow-x: auto; }
+  .pillar-tab { padding: 0.65rem 2.5rem; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); text-decoration: none; border: 1px solid rgba(255,255,255,0.1); margin-right: -1px; transition: all 0.2s; white-space: nowrap; }
+  .pillar-tab:hover { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.2); }
 
-/* SHARED SECTION */
-.content-section { padding: 5.5rem 3rem; }
-.section-kicker { font-size: 0.66rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(–sienna); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.8rem; }
-.section-kicker::before { content:’’; width: 1.8rem; height: 1px; background: var(–dusk); }
-.section-title { font-family: var(–serif); font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 400; line-height: 1.15; color: var(–charcoal); }
-.section-title em { font-style: italic; }
-.view-all { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(–sienna); text-decoration: none; border-bottom: 1px solid var(–dusk); padding-bottom: 2px; white-space: nowrap; }
-.view-all:hover { color: var(–charcoal); }
-.content-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; }
+  /* SHARED SECTION */
+  .content-section { padding: 5.5rem 3rem; }
+  .section-kicker { font-size: 0.66rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sienna); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.8rem; }
+  .section-kicker::before { content:''; width: 1.8rem; height: 1px; background: var(--dusk); }
+  .section-title { font-family: var(--serif); font-size: clamp(1.8rem,3.5vw,2.8rem); font-weight: 400; line-height: 1.15; color: var(--charcoal); }
+  .section-title em { font-style: italic; }
+  .view-all { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sienna); text-decoration: none; border-bottom: 1px solid var(--dusk); padding-bottom: 2px; white-space: nowrap; }
+  .view-all:hover { color: var(--charcoal); }
+  .content-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; }
 
-/* TILE GRID */
-.tile-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
-.tile { position: relative; overflow: hidden; cursor: pointer; background: var(–mist); transition: transform 0.35s ease; }
-.tile:hover { transform: translateY(-4px); }
-.tile:hover .tile-img { transform: scale(1.04); }
-.tile.tall { grid-row: span 2; }
-.tile.wide { grid-column: span 2; }
-.tile-img { width: 100%; aspect-ratio: 4/3; transition: transform 0.5s ease; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-.tile.tall .tile-img { aspect-ratio: unset; height: 100%; min-height: 420px; }
-.tile.wide .tile-img { aspect-ratio: 16/7; }
-.tile-ph { font-family: var(–serif); font-style: italic; color: var(–dusk); font-size: 1rem; text-align: center; padding: 1.5rem; }
-.ta { background: #D6CEBC; } .tb { background: #CACED4; } .tc { background: #D4CABD; } .td { background: #C8D1C8; } .te { background: #D1C4B8; } .tf { background: #C9D4CE; }
-.tile-body { padding: 1.2rem 1.4rem 1.5rem; }
-.tile-cat { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(–sienna); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
-.tile-cat::before { content:’’; display: inline-block; width: 1rem; height: 1px; background: var(–sienna); }
-.tile-title { font-family: var(–serif); font-size: 1.1rem; font-weight: 400; line-height: 1.3; color: var(–charcoal); margin-bottom: 0.4rem; }
-.tile.tall .tile-title, .tile.wide .tile-title { font-size: 1.35rem; }
-.tile-meta { font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(–dusk); }
+  /* TILE GRID */
+  .tile-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+  .tile { position: relative; overflow: hidden; cursor: pointer; background: var(--mist); transition: transform 0.35s ease; }
+  .tile:hover { transform: translateY(-4px); }
+  .tile:hover .tile-img { transform: scale(1.04); }
+  .tile.tall { grid-row: span 2; }
+  .tile.wide { grid-column: span 2; }
+  .tile-img { width: 100%; aspect-ratio: 4/3; transition: transform 0.5s ease; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+  .tile.tall .tile-img { aspect-ratio: unset; height: 100%; min-height: 420px; }
+  .tile.wide .tile-img { aspect-ratio: 16/7; }
+  .tile-ph { font-family: var(--serif); font-style: italic; color: var(--dusk); font-size: 1rem; text-align: center; padding: 1.5rem; }
+  .ta { background: #D6CEBC; } .tb { background: #CACED4; } .tc { background: #D4CABD; } .td { background: #C8D1C8; } .te { background: #D1C4B8; } .tf { background: #C9D4CE; }
+  .tile-body { padding: 1.2rem 1.4rem 1.5rem; }
+  .tile-cat { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sienna); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+  .tile-cat::before { content:''; display: inline-block; width: 1rem; height: 1px; background: var(--sienna); }
+  .tile-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; line-height: 1.3; color: var(--charcoal); margin-bottom: 0.4rem; }
+  .tile.tall .tile-title, .tile.wide .tile-title { font-size: 1.35rem; }
+  .tile-meta { font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dusk); }
 
-/* WANDER SUB-TABS */
-.wander-sub-nav { display: flex; gap: 0; margin-bottom: 2.5rem; overflow-x: auto; }
-.wander-tab { padding: 0.52rem 1.4rem; font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(–sienna); border: 1px solid var(–dusk); margin-right: -1px; cursor: pointer; background: transparent; transition: all 0.2s; white-space: nowrap; font-family: var(–sans); }
-.wander-tab.active, .wander-tab:hover { background: var(–charcoal); color: var(–cream); border-color: var(–charcoal); z-index: 1; }
+  /* NOLA MUST-DO CLASSICS EDITORIAL */
+  .nola-classics { margin-top: 3rem; }
+  .nola-classics-header { margin-bottom: 1.8rem; }
+  .nola-classics-label { font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sienna); display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.4rem; }
+  .nola-classics-label::before { content: ''; width: 1.5rem; height: 1px; background: var(--dusk); }
+  .nola-classics-title { font-family: var(--serif); font-size: 1.4rem; color: var(--charcoal); font-weight: 400; }
+  .nola-classics-title em { font-style: italic; }
+  .nola-pair { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .nola-card { position: relative; overflow: hidden; background: var(--charcoal); }
+  .nola-card-video { width: 100%; aspect-ratio: 9/16; max-height: 480px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .nola-card:hover .nola-card-video { transform: scale(1.03); }
+  .nola-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(44,40,37,0.88) 0%, rgba(44,40,37,0.1) 55%, transparent 100%); pointer-events: none; }
+  .nola-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.8rem 1.6rem; }
+  .nola-card-tag { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+  .nola-card-tag::before { content: ''; width: 1rem; height: 1px; background: var(--dusk); }
+  .nola-card-name { font-family: var(--serif); font-size: 1.5rem; color: white; font-weight: 400; line-height: 1.15; margin-bottom: 0.6rem; }
+  .nola-card-name em { font-style: italic; }
+  .nola-card-desc { font-family: var(--bask); font-style: italic; font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.7; margin-bottom: 1rem; }
+  .nola-card-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.28rem 0.8rem; font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+  .nola-card video { width: 100%; display: block; }
 
-/* & SECTION */
-.amp-section { background: var(–sand); }
-.gems-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-bottom: 3rem; }
-.gem-card { padding: 1.8rem 1.4rem; border: 1px solid var(–mist); background: white; transition: all 0.3s; cursor: pointer; position: relative; overflow: hidden; }
-.gem-card::before { content:’’; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(–mist); transition: background 0.2s; }
-.gem-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(44,40,37,0.07); }
-.gem-card:hover::before { background: var(–sienna); }
-.gem-icon { font-size: 1.7rem; margin-bottom: 0.9rem; display: block; }
-.gem-label { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(–dusk); margin-bottom: 0.4rem; }
-.gem-title { font-family: var(–serif); font-size: 1.05rem; color: var(–charcoal); line-height: 1.3; margin-bottom: 0.5rem; }
-.gem-desc { font-family: var(–bask); font-style: italic; font-size: 0.78rem; color: var(–sienna); line-height: 1.7; }
+  /* NOLA HIDDEN GEM CARD */
+  .nola-gem { margin-top: 2px; display: grid; grid-template-columns: 1fr 1.2fr; background: var(--sand, #F5F0E8); }
+  .nola-gem-video { position: relative; overflow: hidden; background: var(--charcoal, #2C2825); }
+  .nola-gem-video video { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 420px; max-height: 520px; }
+  .nola-gem-content { padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .nola-gem-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: white; border: 1px solid var(--mist, #EDE7DC); padding: 0.3rem 0.9rem; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sienna, #8B6E52); margin-bottom: 1.5rem; align-self: flex-start; }
+  .nola-gem-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--sage, #7A9178); }
+  .nola-gem-name { font-family: var(--serif, 'Playfair Display', Georgia, serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; color: var(--charcoal, #2C2825); line-height: 1.1; margin-bottom: 0.5rem; }
+  .nola-gem-name em { font-style: italic; color: var(--sienna, #8B6E52); }
+  .nola-gem-location { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dusk, #C4B49A); margin-bottom: 1.5rem; }
+  .nola-gem-desc { font-family: var(--bask, 'Libre Baskerville', Georgia, serif); font-style: italic; font-size: 0.9rem; color: var(--sienna, #8B6E52); line-height: 1.8; margin-bottom: 2rem; max-width: 40ch; }
+  .nola-gem-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .nola-gem-tag { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sienna, #8B6E52); border: 1px solid var(--dusk, #C4B49A); padding: 0.28rem 0.75rem; }
+  .nola-gem-tag.featured { background: var(--charcoal, #2C2825); color: white; border-color: var(--charcoal, #2C2825); }
 
-/* WIT SECTION */
-.wit-section { background: var(–charcoal); padding: 5.5rem 3rem; }
-.wit-section .section-kicker { color: rgba(255,255,255,0.35); }
-.wit-section .section-kicker::before { background: rgba(255,255,255,0.2); }
-.wit-section .section-title { color: var(–cream); }
-.wit-section .section-title em { color: #E8C76A; font-style: italic; }
-.wit-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 3rem; }
-.wit-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem 2rem; transition: background 0.25s; cursor: pointer; }
-.wit-card:hover { background: rgba(255,255,255,0.08); }
-.wit-num { font-size: 0.6rem; letter-spacing: 0.25em; color: #E8C76A; opacity: 0.6; margin-bottom: 1.2rem; }
-.wit-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
-.wit-card-title { font-family: var(–serif); font-size: 1.25rem; color: var(–cream); line-height: 1.2; margin-bottom: 0.8rem; }
-.wit-card-desc { font-family: var(–bask); font-style: italic; font-size: 0.82rem; color: rgba(255,255,255,0.48); line-height: 1.75; }
-.wit-posts { margin-top: 3rem; display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
-.wit-post { border: 1px solid rgba(255,255,255,0.07); padding: 1.5rem; cursor: pointer; transition: border-color 0.2s; }
-.wit-post:hover { border-color: rgba(255,255,255,0.18); }
-.wit-tag { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: #E8C76A; margin-bottom: 0.6rem; opacity: 0.7; }
-.wit-post-title { font-family: var(–serif); font-size: 1rem; color: rgba(255,255,255,0.82); line-height: 1.35; }
-.wit-post-meta { font-size: 0.63rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-top: 0.6rem; }
+  /* VIDEO EMBED */
+  .gem-video-feature { margin-top: 3rem; }
+  .gem-video-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; }
+  .gem-video-wrap { position: relative; background: var(--charcoal); overflow: hidden; }
+  .gem-video-wrap video { width: 100%; display: block; max-height: 560px; object-fit: cover; }
+  .gem-video-wrap iframe { width: 100%; aspect-ratio: 9/16; max-height: 560px; border: none; display: block; }
+  .gem-video-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .gem-video-main { position: relative; }
+  .gem-video-sidebar { display: flex; flex-direction: column; gap: 2px; }
+  .gem-video-thumb { flex: 1; overflow: hidden; cursor: pointer; position: relative; background: var(--mist); }
+  .gem-video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+  .gem-video-thumb:hover img { transform: scale(1.04); }
+  .gem-video-caption { padding: 1.5rem 0 0; }
+  .gem-video-caption-name { font-family: var(--serif); font-size: 1.3rem; color: var(--charcoal); margin-bottom: 0.3rem; }
+  .gem-video-caption-name em { font-style: italic; }
+  .gem-video-caption-desc { font-family: var(--bask); font-style: italic; font-size: 0.85rem; color: var(--sienna); line-height: 1.75; max-width: 60ch; margin-bottom: 1rem; }
+  .gem-video-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .gem-video-tag { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sienna); border: 1px solid var(--dusk); padding: 0.28rem 0.75rem; }
+  .gem-video-tag.black-owned { background: var(--charcoal); color: var(--cream); border-color: var(--charcoal); }
 
-/* IG FEED */
-.ig-section { padding: 5.5rem 3rem; background: var(–cream); }
-.ig-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; }
-.ig-badge { display: inline-flex; align-items: center; gap: 0.55rem; background: white; border: 1px solid var(–mist); padding: 0.48rem 1.1rem; border-radius: 100px; font-size: 0.7rem; letter-spacing: 0.1em; color: var(–sienna); text-decoration: none; margin-top: 0.8rem; transition: all 0.2s; }
-.ig-badge:hover { background: var(–charcoal); color: var(–cream); }
-.ig-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 4px; }
-.ig-cell { aspect-ratio: 1; overflow: hidden; cursor: pointer; position: relative; }
-.ig-cell:hover .ig-ov { opacity: 1; }
-.ig-ov { position: absolute; inset: 0; background: rgba(44,40,37,0.42); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s; }
-.ig-bg { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(–serif); font-style: italic; font-size: 0.7rem; color: rgba(0,0,0,0.3); padding: 0.5rem; text-align: center; }
-.iga { background: #C8C0AE; } .igb { background: #B8C4BC; } .igc { background: #C4BAC8; }
-.igd { background: #C4C0B4; } .ige { background: #B4C0B8; } .igf { background: #C8BEB4; }
-.ig-note { text-align: center; margin-top: 1.2rem; font-family: var(–bask); font-style: italic; font-size: 0.8rem; color: var(–dusk); }
+  /* PHOTO STRIP */
+  .gem-photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 2px; }
+  .gem-photo-cell { aspect-ratio: 1; overflow: hidden; position: relative; cursor: pointer; }
+  .gem-photo-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+  .gem-photo-cell:hover img { transform: scale(1.05); }
+  .gem-photo-cell .ph-overlay { position: absolute; inset: 0; background: rgba(44,40,37,0); transition: background 0.25s; display: flex; align-items: flex-end; padding: 0.75rem; }
+  .gem-photo-cell:hover .ph-overlay { background: rgba(44,40,37,0.3); }
+  .gem-photo-cell .ph-label { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: white; opacity: 0; transition: opacity 0.25s; }
+  .gem-photo-cell:hover .ph-label { opacity: 1; }
 
-/* CTA DUAL */
-.cta-section { display: grid; grid-template-columns: 1fr 1fr; }
-.cta-panel { padding: 6rem 4rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
-.cta-feature { background: var(–sand); }
-.cta-collab { background: var(–sienna); }
-.cta-ring { position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.05); pointer-events: none; }
-.cta-collab .cta-ring { border-color: rgba(255,255,255,0.1); }
-.cta-ey { font-size: 0.63rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(–sienna); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
-.cta-ey::before { content:’’; width: 1.5rem; height: 1px; background: var(–dusk); }
-.cta-collab .cta-ey { color: rgba(255,255,255,0.5); }
-.cta-collab .cta-ey::before { background: rgba(255,255,255,0.25); }
-.cta-title { font-family: var(–serif); font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 400; line-height: 1.12; color: var(–charcoal); margin-bottom: 1rem; }
-.cta-collab .cta-title { color: white; }
-.cta-desc { font-family: var(–bask); font-style: italic; font-size: 0.88rem; color: var(–sienna); line-height: 1.8; max-width: 38ch; margin-bottom: 2rem; }
-.cta-collab .cta-desc { color: rgba(255,255,255,0.65); }
-.cta-perks { margin-bottom: 2.2rem; display: flex; flex-direction: column; gap: 0.55rem; }
-.cta-perk { font-size: 0.78rem; color: var(–charcoal); display: flex; align-items: center; gap: 0.7rem; }
-.cta-collab .cta-perk { color: rgba(255,255,255,0.72); }
-.cta-perk::before { content:‘✦’; font-size: 0.48rem; color: var(–dusk); flex-shrink: 0; }
-.cta-collab .cta-perk::before { color: rgba(255,255,255,0.35); }
-.cta-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.88rem 2rem; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: all 0.25s; align-self: flex-start; font-family: var(–sans); }
-.cta-btn-dark { background: var(–charcoal); color: white; }
-.cta-btn-dark:hover { background: var(–sienna); }
-.cta-btn-light { background: white; color: var(–sienna); }
-.cta-btn-light:hover { background: var(–charcoal); color: white; }
+  /* WANDER SUB-TABS */
+  .wander-sub-nav { display: flex; gap: 0; margin-bottom: 2.5rem; overflow-x: auto; }
+  .wander-tab { padding: 0.52rem 1.4rem; font-size: 0.66rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sienna); border: 1px solid var(--dusk); margin-right: -1px; cursor: pointer; background: transparent; transition: all 0.2s; white-space: nowrap; font-family: var(--sans); }
+  .wander-tab.active, .wander-tab:hover { background: var(--charcoal); color: var(--cream); border-color: var(--charcoal); z-index: 1; }
 
-/* MEDIA KIT */
-.mk-section { background: var(–mist); }
+  /* & SECTION */
+  .amp-section { background: var(--sand, #F5F0E8); }
+  .gems-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-bottom: 3rem; }
+  .gem-card { padding: 1.8rem 1.4rem; border: 1px solid var(--mist); background: white; transition: all 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+  .gem-card::before { content:''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--mist); transition: background 0.2s; }
+  .gem-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(44,40,37,0.07); }
+  .gem-card:hover::before { background: var(--sienna); }
+  .gem-icon { font-size: 1.7rem; margin-bottom: 0.9rem; display: block; }
+  .gem-label { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dusk); margin-bottom: 0.4rem; }
+  .gem-title { font-family: var(--serif); font-size: 1.05rem; color: var(--charcoal); line-height: 1.3; margin-bottom: 0.5rem; }
+  .gem-desc { font-family: var(--bask); font-style: italic; font-size: 0.78rem; color: var(--sienna); line-height: 1.7; }
 
-/* Creator block */
-/* Media Kit creator layout */
-.mk-creator { display: grid; grid-template-columns: 340px 1fr; gap: 4rem; align-items: start; padding: 5.5rem 3rem 3rem; }
-.mk-photo-placeholder { background: var(–mist); aspect-ratio: 3/4; overflow: hidden; border: 1px solid var(–dusk); }
-.mk-photo-placeholder img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
-.mk-photo-initials { font-family: var(–serif); font-style: italic; font-size: 5rem; color: var(–dusk); }
-.mk-photo-caption { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(–dusk); }
-.mk-creator-handles { display: flex; gap: 1.2rem; margin-top: 1.2rem; flex-wrap: wrap; }
-.mk-handle-row { display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; color: var(–sienna); text-decoration: none; transition: color 0.2s; }
-.mk-handle-row:hover { color: var(–charcoal); }
+  /* WIT SECTION */
+  .wit-section { background: var(--charcoal, #2C2825); padding: 5.5rem 3rem; }
+  .wit-section .section-kicker { color: rgba(255,255,255,0.35); }
+  .wit-section .section-kicker::before { background: rgba(255,255,255,0.2); }
+  .wit-section .section-title { color: var(--cream); }
+  .wit-section .section-title em { color: #E8C76A; font-style: italic; }
+  .wit-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 3rem; }
+  .wit-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem 2rem; transition: background 0.25s; cursor: pointer; }
+  .wit-card:hover { background: rgba(255,255,255,0.08); }
+  .wit-num { font-size: 0.6rem; letter-spacing: 0.25em; color: #E8C76A; opacity: 0.6; margin-bottom: 1.2rem; }
+  .wit-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+  .wit-card-title { font-family: var(--serif); font-size: 1.25rem; color: var(--cream); line-height: 1.2; margin-bottom: 0.8rem; }
+  .wit-card-desc { font-family: var(--bask); font-style: italic; font-size: 0.82rem; color: rgba(255,255,255,0.48); line-height: 1.75; }
+  .wit-posts { margin-top: 3rem; display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+  .wit-post { border: 1px solid rgba(255,255,255,0.07); padding: 1.5rem; cursor: pointer; transition: border-color 0.2s; }
+  .wit-post:hover { border-color: rgba(255,255,255,0.18); }
+  .wit-tag { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: #E8C76A; margin-bottom: 0.6rem; opacity: 0.7; }
+  .wit-post-title { font-family: var(--serif); font-size: 1rem; color: rgba(255,255,255,0.82); line-height: 1.35; }
+  .wit-post-meta { font-size: 0.63rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-top: 0.6rem; }
 
-/* ATL Itinerary */
-.itinerary-section { background: var(–charcoal); padding: 5.5rem 3rem; }
-.itinerary-section .section-kicker { color: rgba(255,255,255,0.35); }
-.itinerary-section .section-kicker::before { background: rgba(255,255,255,0.2); }
-.itinerary-section .section-title { color: var(–cream); }
-.itinerary-section .section-title em { color: #C9973A; }
-.itinerary-intro { font-family: var(–bask); font-style: italic; font-size: 0.92rem; color: rgba(255,255,255,0.45); line-height: 1.8; max-width: 60ch; margin-top: 0.8rem; margin-bottom: 3rem; }
-.itinerary-grid { display: flex; flex-direction: column; gap: 2px; }
-.itin-day { display: grid; grid-template-columns: 120px 1fr; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); transition: background 0.2s; }
-.itin-day:hover { background: rgba(255,255,255,0.06); }
-.itin-day-label { padding: 1.8rem 1.5rem; border-right: 1px solid rgba(255,255,255,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.4rem; }
-.itin-day-num { font-family: var(–serif); font-size: 2rem; color: #C9973A; line-height: 1; }
-.itin-day-word { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); }
-.itin-day-body { padding: 1.8rem 2rem; }
-.itin-day-title { font-family: var(–serif); font-size: 1.05rem; color: var(–cream); margin-bottom: 0.6rem; line-height: 1.3; }
-.itin-spots { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.itin-spot { font-size: 0.68rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); padding: 0.3rem 0.75rem; }
-.mk-desc { font-family: var(–bask); font-style: italic; font-size: 0.9rem; color: var(–sienna); line-height: 1.8; margin-bottom: 1rem; }
-.mk-location { font-size: 0.72rem; letter-spacing: 0.12em; color: var(–charcoal); margin-top: 1.2rem; margin-bottom: 0.6rem; }
-.mk-featured-badge { display: inline-block; font-size: 0.63rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(–sienna); border: 1px solid var(–dusk); padding: 0.3rem 0.8rem; }
-.mk-creator-handles { display: flex; flex-direction: column; gap: 0.6rem; padding-top: 2.8rem; }
-.mk-handle-row { display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; color: var(–sienna); }
+  /* IG FEED */
+  .ig-section { padding: 5.5rem 3rem; background: var(--cream); }
+  .ig-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; }
+  .ig-badge { display: inline-flex; align-items: center; gap: 0.55rem; background: white; border: 1px solid var(--mist); padding: 0.48rem 1.1rem; border-radius: 100px; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--sienna); text-decoration: none; margin-top: 0.8rem; transition: all 0.2s; }
+  .ig-badge:hover { background: var(--charcoal); color: var(--cream); }
+  .ig-grid { display: grid; grid-template-columns: repeat(6,1fr); gap: 4px; }
+  .ig-cell { aspect-ratio: 1; overflow: hidden; cursor: pointer; position: relative; }
+  .ig-cell:hover .ig-ov { opacity: 1; }
+  .ig-ov { position: absolute; inset: 0; background: rgba(44,40,37,0.42); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.25s; }
+  .ig-bg { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-style: italic; font-size: 0.7rem; color: rgba(0,0,0,0.3); padding: 0.5rem; text-align: center; }
+  .iga { background: #C8C0AE; } .igb { background: #B8C4BC; } .igc { background: #C4BAC8; }
+  .igd { background: #C4C0B4; } .ige { background: #B4C0B8; } .igf { background: #C8BEB4; }
+  .ig-note { text-align: center; margin-top: 1.2rem; font-family: var(--bask); font-style: italic; font-size: 0.8rem; color: var(--dusk); }
 
-/* Stats bar */
-.mk-stats-full { display: grid; grid-template-columns: repeat(6,1fr); gap: 1px; background: var(–dusk); border-top: 1px solid var(–dusk); border-bottom: 1px solid var(–dusk); }
-.mk-stat-full { background: white; padding: 2rem 1.2rem; text-align: center; }
-.mk-stat-num { font-family: var(–serif); font-size: 1.9rem; color: var(–sienna); line-height: 1; margin-bottom: 0.4rem; }
-.mk-stat-label { font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(–dusk); line-height: 1.5; }
+  /* CTA DUAL */
+  .cta-section { display: grid; grid-template-columns: 1fr 1fr; }
+  .cta-panel { padding: 6rem 4rem; display: flex; flex-direction: column; justify-content: center; position: relative; overflow: hidden; }
+  .cta-feature { background: var(--sand); }
+  .cta-collab { background: var(--sienna, #8B6E52); }
+  .cta-ring { position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.05); pointer-events: none; }
+  .cta-collab .cta-ring { border-color: rgba(255,255,255,0.1); }
+  .cta-ey { font-size: 0.63rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sienna); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.8rem; }
+  .cta-ey::before { content:''; width: 1.5rem; height: 1px; background: var(--dusk); }
+  .cta-collab .cta-ey { color: rgba(255,255,255,0.5); }
+  .cta-collab .cta-ey::before { background: rgba(255,255,255,0.25); }
+  .cta-title { font-family: var(--serif); font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 400; line-height: 1.12; color: var(--charcoal); margin-bottom: 1rem; }
+  .cta-collab .cta-title { color: white; }
+  .cta-desc { font-family: var(--bask); font-style: italic; font-size: 0.88rem; color: var(--sienna); line-height: 1.8; max-width: 38ch; margin-bottom: 2rem; }
+  .cta-collab .cta-desc { color: rgba(255,255,255,0.65); }
+  .cta-perks { margin-bottom: 2.2rem; display: flex; flex-direction: column; gap: 0.55rem; }
+  .cta-perk { font-size: 0.78rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.7rem; }
+  .cta-collab .cta-perk { color: rgba(255,255,255,0.72); }
+  .cta-perk::before { content:'✦'; font-size: 0.48rem; color: var(--dusk); flex-shrink: 0; }
+  .cta-collab .cta-perk::before { color: rgba(255,255,255,0.35); }
+  .cta-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.88rem 2rem; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: all 0.25s; align-self: flex-start; font-family: var(--sans); }
+  .cta-btn-dark { background: var(--charcoal); color: white; }
+  .cta-btn-dark:hover { background: var(--sienna); }
+  .cta-btn-light { background: white; color: var(--sienna); }
+  .cta-btn-light:hover { background: var(--charcoal); color: white; }
 
-/* Audience details */
-.mk-audience { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(–dusk); }
-.mk-aud-item { background: var(–cream); padding: 1.5rem 2rem; border-left: 3px solid var(–dusk); }
-.mk-aud-label { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(–sienna); margin-bottom: 0.4rem; }
-.mk-aud-val { font-size: 0.83rem; color: var(–charcoal); line-height: 1.65; }
+  /* MEDIA KIT */
+  .mk-section { background: var(--mist); }
 
-/* Services */
-.mk-services { background: var(–charcoal); padding: 4rem 3rem 5rem; }
-.mk-services-header { text-align: center; margin-bottom: 3rem; }
-.mk-services-header .section-kicker { justify-content: center; color: rgba(255,255,255,0.35); }
-.mk-services-header .section-kicker::before { background: rgba(255,255,255,0.2); }
-.mk-services-title { font-family: var(–serif); font-size: clamp(1.6rem,3vw,2.4rem); font-weight: 400; color: var(–cream); margin-top: 0.4rem; }
-.mk-services-title em { font-style: italic; }
-.mk-services-sub { font-family: var(–bask); font-style: italic; font-size: 0.82rem; color: rgba(255,255,255,0.35); margin-top: 0.5rem; }
-.mk-services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.08); margin-bottom: 3rem; }
-.mk-service { background: var(–charcoal); padding: 2rem; border: 1px solid rgba(255,255,255,0.07); }
-.mk-service-name { font-family: var(–serif); font-size: 1.1rem; color: var(–cream); margin-bottom: 0.3rem; }
-.mk-service-price { font-size: 0.75rem; color: #C9973A; letter-spacing: 0.05em; margin-bottom: 0.7rem; font-weight: 400; }
-.mk-service-desc { font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.42); }
-.mk-packages-title { font-family: var(–serif); font-size: 1.4rem; color: var(–cream); text-align: center; font-weight: 400; margin-bottom: 1.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08); }
-.mk-packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-bottom: 1.5rem; }
-.mk-package { padding: 2rem 1.5rem; border: 1px solid rgba(201,151,58,0.22); background: rgba(201,151,58,0.04); }
-.mk-package-featured { border-color: rgba(201,151,58,0.55); background: rgba(201,151,58,0.1); }
-.mk-pkg-name { font-family: var(–serif); font-size: 1.15rem; color: #C9973A; margin-bottom: 0.4rem; }
-.mk-pkg-price { font-family: var(–serif); font-size: 1.5rem; color: var(–cream); margin-bottom: 0.6rem; }
-.mk-pkg-tag { font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(232,213,163,0.38); margin-bottom: 1rem; display: block; }
-.mk-pkg-includes { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.75rem; line-height: 1.6; color: rgba(232,213,163,0.58); }
-.mk-addons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 2.5rem; }
-.mk-addon { font-size: 0.72rem; color: rgba(232,213,163,0.45); padding: 0.5rem 1.1rem; border: 1px solid rgba(201,151,58,0.15); letter-spacing: 0.04em; }
-.mk-addon span { color: #C9973A; }
-.mk-cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
-.mk-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.88rem 2rem; background: var(–cream); color: var(–charcoal); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; font-family: var(–sans); }
-.mk-btn:hover { background: var(–sienna); color: white; }
-.mk-btn-ghost { background: transparent; color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.18); }
-.mk-btn-ghost:hover { background: rgba(255,255,255,0.08); color: white; }
-.mk-values-note { text-align: center; font-family: var(–bask); font-style: italic; font-size: 0.78rem; color: rgba(255,255,255,0.28); max-width: 55ch; margin: 0 auto; line-height: 1.7; }
+  /* Creator block */
+  /* Media Kit creator layout */
+  .mk-creator { display: grid; grid-template-columns: 340px 1fr; gap: 4rem; align-items: start; padding: 5.5rem 3rem 3rem; }
+  .mk-photo-placeholder { background: var(--mist); aspect-ratio: 3/4; overflow: hidden; border: 1px solid var(--dusk); }
+  .mk-photo-placeholder img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .mk-photo-initials { font-family: var(--serif); font-style: italic; font-size: 5rem; color: var(--dusk); }
+  .mk-photo-caption { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dusk); }
+  .mk-creator-handles { display: flex; gap: 1.2rem; margin-top: 1.2rem; flex-wrap: wrap; }
+  .mk-handle-row { display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--sienna); text-decoration: none; transition: color 0.2s; }
+  .mk-handle-row:hover { color: var(--charcoal); }
 
-/* HHH */
-.hhh-section { padding: 5.5rem 3rem; background: var(–hhh); position: relative; overflow: hidden; }
-.hhh-stars { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255,255,255,0.55) 1px, transparent 1px), radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px), radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 120px 120px, 80px 80px, 200px 200px; background-position: 0 0, 40px 60px, 90px 30px; }
-.hhh-inner { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.hhh-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 1.5rem; }
-.hhh-dot { width: 5px; height: 5px; border-radius: 50%; background: #E8C76A; }
-.hhh-left h2 { font-family: var(–serif); font-size: clamp(2rem,4vw,3.2rem); font-weight: 400; line-height: 1.12; color: white; margin-bottom: 1.2rem; }
-.hhh-left h2 em { font-style: italic; color: #E8C76A; }
-.hhh-left p { font-family: var(–bask); font-style: italic; font-size: 0.92rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 2rem; max-width: 38ch; }
-.hhh-links { display: flex; flex-direction: column; gap: 0.8rem; }
-.hhh-link { display: flex; align-items: center; gap: 1rem; text-decoration: none; padding: 0.85rem 1.2rem; border: 1px solid rgba(255,255,255,0.1); transition: background 0.2s, border-color 0.2s; }
-.hhh-link:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); }
-.hhh-pi { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.hhh-tt { background: rgba(255,255,255,0.1); }
-.hhh-ig { background: linear-gradient(135deg,#833AB4,#E1306C,#F77737); }
-.hhh-li { flex: 1; }
-.hhh-plat { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
-.hhh-handle { font-size: 0.9rem; color: rgba(255,255,255,0.82); }
-.hhh-arrow { color: rgba(255,255,255,0.22); }
-.hhh-right { display: flex; flex-direction: column; gap: 1px; }
-.hhh-tip { padding: 1.5rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); transition: background 0.2s; }
-.hhh-tip:hover { background: rgba(255,255,255,0.08); }
-.hhh-tip-num { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #E8C76A; opacity: 0.7; margin-bottom: 0.4rem; }
-.hhh-tip-title { font-family: var(–serif); font-size: 1rem; color: rgba(255,255,255,0.82); line-height: 1.3; }
+  /* INDIEHOUSE FEATURE */
+  .indie-feature { margin-top: 3rem; }
+  .indie-feature-header { margin-bottom: 1.5rem; }
+  .indie-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2px; }
+  .indie-main-video { position: relative; overflow: hidden; background: var(--charcoal, #2C2825); }
+  .indie-main-video video { width: 100%; min-height: 480px; max-height: 560px; object-fit: cover; display: block; }
+  .indie-side { display: grid; grid-template-rows: 1fr 1fr; gap: 2px; }
+  .indie-side-video { overflow: hidden; background: var(--mist, #EDE7DC); }
+  .indie-side-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .indie-copy { background: var(--sand, #F5F0E8); padding: 2rem 1.8rem; display: flex; flex-direction: column; justify-content: center; }
+  .indie-copy .section-kicker { margin-bottom: 0.6rem; }
+  .indie-copy-title { font-family: var(--serif, 'Playfair Display', Georgia, serif); font-size: 1.6rem; color: var(--charcoal, #2C2825); font-weight: 400; line-height: 1.15; margin-bottom: 0.8rem; }
+  .indie-copy-title em { font-style: italic; }
+  .indie-copy-desc { font-family: var(--bask, 'Libre Baskerville', Georgia, serif); font-style: italic; font-size: 0.85rem; color: var(--sienna, #8B6E52); line-height: 1.8; margin-bottom: 1.2rem; }
+  .indie-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .indie-tag { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sienna, #8B6E52); border: 1px solid var(--dusk, #C4B49A); padding: 0.28rem 0.75rem; }
 
-/* FOLLOW STRIP */
-.follow-strip { padding: 4.5rem 3rem; background: var(–sand); }
-.follow-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; }
-.follow-platforms { display: flex; flex-wrap: wrap; gap: 1rem; }
-.follow-btn { display: flex; align-items: center; gap: 0.7rem; padding: 0.72rem 1.5rem; border: 1px solid var(–dusk); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(–charcoal); background: white; transition: background 0.2s, color 0.2s, border-color 0.2s; }
-.follow-btn:hover { background: var(–charcoal); color: var(–cream); border-color: var(–charcoal); }
+  /* BSB FEATURE */
+  .bsb-feature { margin-top: 2px; background: var(--charcoal, #2C2825); padding: 0; position: relative; overflow: hidden; }
+  .bsb-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+  .bsb-cell { position: relative; overflow: hidden; aspect-ratio: 9/16; max-height: 400px; }
+  .bsb-cell video { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .bsb-cell:hover video { transform: scale(1.03); }
+  .bsb-cell-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(44,40,37,0.7) 0%, transparent 60%); pointer-events: none; }
+  .bsb-cell-label { position: absolute; bottom: 0.8rem; left: 0.8rem; font-size: 0.58rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+  .bsb-header { padding: 2.5rem 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); }
+  .bsb-title { font-family: var(--serif, 'Playfair Display', Georgia, serif); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 400; color: white; line-height: 1.1; }
+  .bsb-title em { font-style: italic; color: #C9973A; }
+  .bsb-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(201,151,58,0.12); border: 1px solid rgba(201,151,58,0.3); padding: 0.3rem 0.9rem; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: #C9973A; margin-bottom: 1rem; }
+  .bsb-right-desc { font-family: var(--bask, 'Libre Baskerville', Georgia, serif); font-style: italic; font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 1.5rem; }
+  .bsb-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .bsb-tag { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.15); padding: 0.28rem 0.75rem; }
+  .bsb-tag.gold { background: rgba(201,151,58,0.15); border-color: rgba(201,151,58,0.4); color: #C9973A; }
 
-/* NEWSLETTER — removed, to be added later */
+  /* ATL VIDEO TILE */
+  .atl-video-tile { position: relative; overflow: hidden; cursor: pointer; background: var(--charcoal, #2C2825); grid-column: span 2; }
+  .atl-video-tile video { width: 100%; aspect-ratio: 16/7; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .atl-video-tile:hover video { transform: scale(1.03); }
+  .atl-video-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(44,40,37,0.82) 0%, rgba(44,40,37,0.05) 55%, transparent 100%); pointer-events: none; }
+  .atl-video-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.8rem 2rem; display: flex; justify-content: space-between; align-items: flex-end; }
+  .atl-video-left .tile-cat { color: rgba(255,255,255,0.55); margin-bottom: 0.5rem; }
+  .atl-video-left .tile-cat::before { background: rgba(255,255,255,0.4); }
+  .atl-video-title { font-family: var(--serif, 'Playfair Display', Georgia, serif); font-size: 1.4rem; color: white; font-weight: 400; line-height: 1.2; margin-bottom: 0.3rem; }
+  .atl-video-meta { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+  .atl-video-pill { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.25); padding: 0.3rem 0.8rem; white-space: nowrap; }
 
-/* FOOTER */
-footer { background: var(–charcoal); color: var(–cream); padding: 4rem 3rem 2rem; }
-.footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem; }
-.footer-brand { font-family: var(–serif); font-style: italic; font-size: 1.4rem; color: var(–cream); display: block; margin-bottom: 0.8rem; text-decoration: none; }
-.footer-tag { font-family: var(–bask); font-style: italic; font-size: 0.8rem; color: var(–dusk); line-height: 1.75; margin-bottom: 1.5rem; }
-.footer-hhh { display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0.9rem; font-size: 0.63rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
-.footer-hhh:hover { border-color: rgba(255,255,255,0.22); color: rgba(255,255,255,0.65); }
-.footer-dot { width: 5px; height: 5px; border-radius: 50%; background: #E8C76A; }
-.footer-col h4 { font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 1.2rem; }
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-.footer-col ul a { font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
-.footer-col ul a:hover { color: var(–cream); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 0.7rem; }
-.footer-bottom p { color: rgba(255,255,255,0.22); }
-.footer-credit a { color: var(–dusk); text-decoration: none; }
+  /* ATL Itinerary */
+  .itinerary-section { background: var(--charcoal, #2C2825); padding: 5.5rem 3rem; }
+  .itinerary-section .section-kicker { color: rgba(255,255,255,0.35); }
+  .itinerary-section .section-kicker::before { background: rgba(255,255,255,0.2); }
+  .itinerary-section .section-title { color: var(--cream); }
+  .itinerary-section .section-title em { color: #C9973A; }
+  .itinerary-intro { font-family: var(--bask); font-style: italic; font-size: 0.92rem; color: rgba(255,255,255,0.45); line-height: 1.8; max-width: 60ch; margin-top: 0.8rem; margin-bottom: 3rem; }
+  .itinerary-grid { display: flex; flex-direction: column; gap: 2px; }
+  .itin-day { display: grid; grid-template-columns: 120px 1fr; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); transition: background 0.2s; }
+  .itin-day:hover { background: rgba(255,255,255,0.06); }
+  .itin-day-label { padding: 1.8rem 1.5rem; border-right: 1px solid rgba(255,255,255,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.4rem; }
+  .itin-day-num { font-family: var(--serif); font-size: 2rem; color: #C9973A; line-height: 1; }
+  .itin-day-word { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); }
+  .itin-day-body { padding: 1.8rem 2rem; }
+  .itin-day-title { font-family: var(--serif); font-size: 1.05rem; color: var(--cream); margin-bottom: 0.6rem; line-height: 1.3; }
+  .itin-spots { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .itin-spot { font-size: 0.68rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); padding: 0.3rem 0.75rem; }
+  .mk-desc { font-family: var(--bask); font-style: italic; font-size: 0.9rem; color: var(--sienna); line-height: 1.8; margin-bottom: 1rem; }
+  .mk-location { font-size: 0.72rem; letter-spacing: 0.12em; color: var(--charcoal); margin-top: 1.2rem; margin-bottom: 0.6rem; }
+  .mk-featured-badge { display: inline-block; font-size: 0.63rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sienna); border: 1px solid var(--dusk); padding: 0.3rem 0.8rem; }
+  .mk-creator-handles { display: flex; flex-direction: column; gap: 0.6rem; padding-top: 2.8rem; }
+  .mk-handle-row { display: flex; align-items: center; gap: 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--sienna); }
 
-/* FADE */
-.fade-up { opacity: 1; transform: none; transition: opacity 0.75s ease, transform 0.75s ease; }
-.fade-up.animate { opacity: 0; transform: translateY(22px); }
-.fade-up.animate.visible { opacity: 1; transform: none; }
+  /* Stats bar */
+  .mk-stats-full { display: grid; grid-template-columns: repeat(6,1fr); gap: 1px; background: var(--dusk); border-top: 1px solid var(--dusk); border-bottom: 1px solid var(--dusk); }
+  .mk-stat-full { background: white; padding: 2rem 1.2rem; text-align: center; }
+  .mk-stat-num { font-family: var(--serif); font-size: 1.9rem; color: var(--sienna); line-height: 1; margin-bottom: 0.4rem; }
+  .mk-stat-label { font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dusk); line-height: 1.5; }
 
-/* RESPONSIVE */
-@media (max-width: 1100px) {
-.footer-top { grid-template-columns: 1fr 1fr 1fr; }
-.gems-grid { grid-template-columns: 1fr 1fr; }
-.mk-stats-full { grid-template-columns: repeat(3,1fr); }
-.mk-creator { grid-template-columns: 1fr; gap: 1.5rem; }
-.mk-creator-handles { flex-direction: row; padding-top: 0; }
-.mk-packages-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 960px) {
-nav { padding: 1rem 1.5rem; }
-.nav-links, .nav-cta { display: none; }
-.hamburger { display: flex; }
-.content-section, .wit-section, .ig-section, .mk-section, .follow-strip { padding: 3.5rem 1.5rem; }
-.hhh-section { padding: 3.5rem 1.5rem; }
-footer { padding: 3rem 1.5rem 2rem; }
-.tile-grid { grid-template-columns: 1fr 1fr; }
-.tile.tall { grid-row: span 1; }
-.tile.wide { grid-column: span 2; }
-.hhh-inner { grid-template-columns: 1fr; gap: 3rem; }
-.follow-inner { flex-direction: column; align-items: flex-start; }
-.footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
-.footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
-.content-header, .ig-header { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
-.cta-section { grid-template-columns: 1fr; }
-.cta-panel { padding: 4rem 2rem; }
-.wit-grid { grid-template-columns: 1fr; }
-.wit-posts { grid-template-columns: 1fr 1fr; }
-.ig-grid { grid-template-columns: repeat(3,1fr); }
-.pillar-band { justify-content: flex-start; padding: 1rem 1.5rem; }
-}
-@media (max-width: 600px) {
-.tile-grid { grid-template-columns: 1fr; }
-.tile.wide { grid-column: span 1; }
-.footer-top { grid-template-columns: 1fr; }
-.gems-grid { grid-template-columns: 1fr 1fr; }
-.mk-stats { grid-template-columns: 1fr 1fr; }
-.mk-stats-full { grid-template-columns: 1fr 1fr; }
-.mk-creator { grid-template-columns: 1fr; }
-.itin-day { grid-template-columns: 80px 1fr; }
-.mk-audience { grid-template-columns: 1fr; }
-.mk-services { padding: 3rem 1.5rem; }
-.mk-services-grid { grid-template-columns: 1fr; }
-.mk-creator { padding: 3.5rem 1.5rem 2rem; }
-.mk-cta-row { flex-direction: column; align-items: center; }
-.wit-posts { grid-template-columns: 1fr; }
-.ig-grid { grid-template-columns: repeat(2,1fr); }
-.hero-pillars { flex-direction: column; }
-.hero-pillar { border-right: none; border-bottom: 1px solid var(–dusk); }
-.hero-pillar:last-child { border-bottom: none; }
-}
+  /* Audience details */
+  .mk-audience { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--dusk); }
+  .mk-aud-item { background: var(--cream); padding: 1.5rem 2rem; border-left: 3px solid var(--dusk); }
+  .mk-aud-label { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sienna); margin-bottom: 0.4rem; }
+  .mk-aud-val { font-size: 0.83rem; color: var(--charcoal); line-height: 1.65; }
+
+  /* Services */
+  .mk-services { background: var(--charcoal, #2C2825); padding: 4rem 3rem 5rem; }
+  .mk-services-header { text-align: center; margin-bottom: 3rem; }
+  .mk-services-header .section-kicker { justify-content: center; color: rgba(255,255,255,0.35); }
+  .mk-services-header .section-kicker::before { background: rgba(255,255,255,0.2); }
+  .mk-services-title { font-family: var(--serif); font-size: clamp(1.6rem,3vw,2.4rem); font-weight: 400; color: var(--cream); margin-top: 0.4rem; }
+  .mk-services-title em { font-style: italic; }
+  .mk-services-sub { font-family: var(--bask); font-style: italic; font-size: 0.82rem; color: rgba(255,255,255,0.35); margin-top: 0.5rem; }
+  .mk-services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.08); margin-bottom: 3rem; }
+  .mk-service { background: var(--charcoal); padding: 2rem; border: 1px solid rgba(255,255,255,0.07); }
+  .mk-service-name { font-family: var(--serif); font-size: 1.1rem; color: var(--cream); margin-bottom: 0.3rem; }
+  .mk-service-price { font-size: 0.75rem; color: #C9973A; letter-spacing: 0.05em; margin-bottom: 0.7rem; font-weight: 400; }
+  .mk-service-desc { font-size: 0.78rem; line-height: 1.7; color: rgba(255,255,255,0.42); }
+  .mk-packages-title { font-family: var(--serif); font-size: 1.4rem; color: var(--cream); text-align: center; font-weight: 400; margin-bottom: 1.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08); }
+  .mk-packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-bottom: 1.5rem; }
+  .mk-package { padding: 2rem 1.5rem; border: 1px solid rgba(201,151,58,0.22); background: rgba(201,151,58,0.04); }
+  .mk-package-featured { border-color: rgba(201,151,58,0.55); background: rgba(201,151,58,0.1); }
+  .mk-pkg-name { font-family: var(--serif); font-size: 1.15rem; color: #C9973A; margin-bottom: 0.4rem; }
+  .mk-pkg-price { font-family: var(--serif); font-size: 1.5rem; color: var(--cream); margin-bottom: 0.6rem; }
+  .mk-pkg-tag { font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(232,213,163,0.38); margin-bottom: 1rem; display: block; }
+  .mk-pkg-includes { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.75rem; line-height: 1.6; color: rgba(232,213,163,0.58); }
+  .mk-addons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 2.5rem; }
+  .mk-addon { font-size: 0.72rem; color: rgba(232,213,163,0.45); padding: 0.5rem 1.1rem; border: 1px solid rgba(201,151,58,0.15); letter-spacing: 0.04em; }
+  .mk-addon span { color: #C9973A; }
+  .mk-cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .mk-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.88rem 2rem; background: var(--cream); color: var(--charcoal); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; font-family: var(--sans); }
+  .mk-btn:hover { background: var(--sienna); color: white; }
+  .mk-btn-ghost { background: transparent; color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.18); }
+  .mk-btn-ghost:hover { background: rgba(255,255,255,0.08); color: white; }
+  .mk-values-note { text-align: center; font-family: var(--bask); font-style: italic; font-size: 0.78rem; color: rgba(255,255,255,0.28); max-width: 55ch; margin: 0 auto; line-height: 1.7; }
+
+  /* HHH */
+  .hhh-section { padding: 5.5rem 3rem; background: var(--hhh, #1A1A2E); position: relative; overflow: hidden; }
+  .hhh-stars { position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255,255,255,0.55) 1px, transparent 1px), radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px), radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 120px 120px, 80px 80px, 200px 200px; background-position: 0 0, 40px 60px, 90px 30px; }
+  .hhh-inner { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .hhh-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 1.5rem; }
+  .hhh-dot { width: 5px; height: 5px; border-radius: 50%; background: #E8C76A; }
+  .hhh-left h2 { font-family: var(--serif); font-size: clamp(2rem,4vw,3.2rem); font-weight: 400; line-height: 1.12; color: white; margin-bottom: 1.2rem; }
+  .hhh-left h2 em { font-style: italic; color: #E8C76A; }
+  .hhh-left p { font-family: var(--bask); font-style: italic; font-size: 0.92rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 2rem; max-width: 38ch; }
+  .hhh-links { display: flex; flex-direction: column; gap: 0.8rem; }
+  .hhh-link { display: flex; align-items: center; gap: 1rem; text-decoration: none; padding: 0.85rem 1.2rem; border: 1px solid rgba(255,255,255,0.1); transition: background 0.2s, border-color 0.2s; }
+  .hhh-link:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); }
+  .hhh-pi { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .hhh-tt { background: rgba(255,255,255,0.1); }
+  .hhh-ig { background: linear-gradient(135deg,#833AB4,#E1306C,#F77737); }
+  .hhh-li { flex: 1; }
+  .hhh-plat { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
+  .hhh-handle { font-size: 0.9rem; color: rgba(255,255,255,0.82); }
+  .hhh-arrow { color: rgba(255,255,255,0.22); }
+  .hhh-right { display: flex; flex-direction: column; gap: 1px; }
+  .hhh-tip { padding: 1.5rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); transition: background 0.2s; }
+  .hhh-tip:hover { background: rgba(255,255,255,0.08); }
+  .hhh-tip-num { font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #E8C76A; opacity: 0.7; margin-bottom: 0.4rem; }
+  .hhh-tip-title { font-family: var(--serif); font-size: 1rem; color: rgba(255,255,255,0.82); line-height: 1.3; }
+
+  /* FOLLOW STRIP */
+  .follow-strip { padding: 4.5rem 3rem; background: var(--sand); }
+  .follow-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; }
+  .follow-platforms { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .follow-btn { display: flex; align-items: center; gap: 0.7rem; padding: 0.72rem 1.5rem; border: 1px solid var(--dusk); text-decoration: none; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--charcoal); background: white; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+  .follow-btn:hover { background: var(--charcoal); color: var(--cream); border-color: var(--charcoal); }
+
+  /* NEWSLETTER - removed, to be added later */
+
+  /* FOOTER */
+  footer { background: var(--charcoal); color: var(--cream); padding: 4rem 3rem 2rem; }
+  .footer-top { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem; }
+  .footer-brand { font-family: var(--serif); font-style: italic; font-size: 1.4rem; color: var(--cream); display: block; margin-bottom: 0.8rem; text-decoration: none; }
+  .footer-tag { font-family: var(--bask); font-style: italic; font-size: 0.8rem; color: var(--dusk); line-height: 1.75; margin-bottom: 1.5rem; }
+  .footer-hhh { display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0.9rem; font-size: 0.63rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+  .footer-hhh:hover { border-color: rgba(255,255,255,0.22); color: rgba(255,255,255,0.65); }
+  .footer-dot { width: 5px; height: 5px; border-radius: 50%; background: #E8C76A; }
+  .footer-col h4 { font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 1.2rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul a { font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--cream); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 0.7rem; }
+  .footer-bottom p { color: rgba(255,255,255,0.22); }
+  .footer-credit a { color: var(--dusk); text-decoration: none; }
+
+  /* FADE — always visible, subtle transition only */
+  .fade-up { opacity: 1; transform: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .footer-top { grid-template-columns: 1fr 1fr 1fr; }
+    .gems-grid { grid-template-columns: 1fr 1fr; }
+    .indie-grid { grid-template-columns: 1fr; }
+    .bsb-grid { grid-template-columns: 1fr 1fr; }
+    .bsb-header { grid-template-columns: 1fr; gap: 1.5rem; }
+    .gem-video-layout { grid-template-columns: 1fr; }
+    .gem-video-sidebar { flex-direction: row; }
+    .gem-photo-strip { grid-template-columns: 1fr 1fr; }
+    .mk-stats-full { grid-template-columns: repeat(3,1fr); }
+    .mk-creator { grid-template-columns: 1fr; gap: 1.5rem; }
+    .mk-creator-handles { flex-direction: row; padding-top: 0; }
+    .mk-packages-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 960px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .content-section, .wit-section, .ig-section, .mk-section, .follow-strip { padding: 3.5rem 1.5rem; }
+    .hhh-section { padding: 3.5rem 1.5rem; }
+    footer { padding: 3rem 1.5rem 2rem; }
+    .tile-grid { grid-template-columns: 1fr 1fr; }
+    .tile.tall { grid-row: span 1; }
+    .tile.wide { grid-column: span 2; }
+    .hhh-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .follow-inner { flex-direction: column; align-items: flex-start; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .content-header, .ig-header { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+    .cta-section { grid-template-columns: 1fr; }
+    .cta-panel { padding: 4rem 2rem; }
+    .wit-grid { grid-template-columns: 1fr; }
+    .wit-posts { grid-template-columns: 1fr 1fr; }
+    .ig-grid { grid-template-columns: repeat(3,1fr); }
+    .pillar-band { justify-content: flex-start; padding: 1rem 1.5rem; }
+  }
+  @media (max-width: 600px) {
+    .tile-grid { grid-template-columns: 1fr; }
+    .nola-pair { grid-template-columns: 1fr; }
+    .indie-grid { grid-template-columns: 1fr; }
+    .bsb-grid { grid-template-columns: 1fr 1fr; }
+    .bsb-header { grid-template-columns: 1fr; gap: 1.5rem; padding: 2rem 1.5rem; }
+    .nola-card-name { font-size: 1.2rem; }
+    .nola-gem { grid-template-columns: 1fr; }
+    .nola-gem-video video { min-height: 280px; }
+    .tile.wide { grid-column: span 1; }
+    .footer-top { grid-template-columns: 1fr; }
+    .gems-grid { grid-template-columns: 1fr 1fr; }
+    .indie-grid { grid-template-columns: 1fr; }
+    .bsb-grid { grid-template-columns: 1fr 1fr; }
+    .bsb-header { grid-template-columns: 1fr; gap: 1.5rem; }
+    .mk-stats { grid-template-columns: 1fr 1fr; }
+    .mk-stats-full { grid-template-columns: 1fr 1fr; }
+    .mk-creator { grid-template-columns: 1fr; }
+    .itin-day { grid-template-columns: 80px 1fr; }
+    .mk-audience { grid-template-columns: 1fr; }
+    .mk-services { padding: 3rem 1.5rem; }
+    .mk-services-grid { grid-template-columns: 1fr; }
+    .mk-creator { padding: 3.5rem 1.5rem 2rem; }
+    .mk-cta-row { flex-direction: column; align-items: center; }
+    .wit-posts { grid-template-columns: 1fr; }
+    .ig-grid { grid-template-columns: repeat(2,1fr); }
+    .hero-pillars { flex-direction: column; }
+    .hero-pillar { border-right: none; border-bottom: 1px solid var(--dusk); }
+    .hero-pillar:last-child { border-bottom: none; }
+  }
 </style>
-
 </head>
 <body>
 
-<!-- SEASONAL BANNER — shown Oct–Dec automatically -->
-
+<!-- SEASONAL BANNER - shown Oct-Dec automatically -->
 <div class="seasonal-banner" id="seasonalBanner">
-  ✦ The holidays are here — <a href="#hhh">Happy Holiday Hacks</a> is live with your best tips yet ✦
+  ✦ The holidays are here - <a href="#hhh">Happy Holiday Hacks</a> is live with your best tips yet ✦
 </div>
 
 <!-- NAV -->
-
 <nav id="navbar">
   <a href="#" class="nav-logo">Wander & Wit</a>
   <ul class="nav-links">
@@ -403,7 +534,6 @@ footer { padding: 3rem 1.5rem 2rem; }
 </nav>
 
 <!-- MOBILE MENU -->
-
 <div class="mobile-menu" id="mobileMenu">
   <a href="#wander" class="mm-link mobile-link">Wander</a>
   <a href="#hidden-gems" class="mm-link mobile-link">&amp;</a>
@@ -421,11 +551,10 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 </div>
 
-<!-- ═══ HERO ═══ -->
-
+<!-- --- HERO --- -->
 <section class="hero">
   <div class="hero-wm">Wander</div>
-  <div class="hero-pill fade-up"><span class="hero-pill-dot"></span> Travel · Hidden Gems · Smart Tips</div>
+  <div class="hero-pill fade-up"><span class="hero-pill-dot"></span> Travel &#183; Hidden Gems &#183; Smart Tips</div>
   <h1 class="fade-up">Explore <em>more,<br>stress less.</em></h1>
   <p class="hero-sub fade-up">Your guide to travel worth taking, hidden gems worth finding, and the wit to make every trip unforgettable.</p>
   <div class="hero-pillars fade-up">
@@ -448,22 +577,20 @@ footer { padding: 3rem 1.5rem 2rem; }
 </section>
 
 <!-- PILLAR BAND -->
-
 <div class="pillar-band">
-  <a href="#wander" class="pillar-tab">✈ Wander — Travel &amp; Destinations</a>
-  <a href="#hidden-gems" class="pillar-tab">&amp; — Hidden Gems</a>
-  <a href="#wit" class="pillar-tab">💡 Wit — Budget Tips &amp; Hacks</a>
+  <a href="#wander" class="pillar-tab">✈ Wander - Travel &amp; Destinations</a>
+  <a href="#hidden-gems" class="pillar-tab">&amp; - Hidden Gems</a>
+  <a href="#wit" class="pillar-tab">💡 Wit - Budget Tips &amp; Hacks</a>
 </div>
 
-<!-- ═══ WANDER ═══ -->
-
+<!-- --- WANDER --- -->
 <section class="content-section" id="wander">
   <div class="content-header fade-up">
     <div>
       <div class="section-kicker">Wander</div>
       <h2 class="section-title">Travel worth <em>the trip.</em></h2>
     </div>
-    <a href="https://www.tiktok.com/@wanderandwit_" target="_blank" class="view-all">Watch on TikTok →</a>
+    <a href="https://www.tiktok.com/@wanderandwit_" target="_blank" class="view-all">Watch on TikTok &rarr;</a>
   </div>
   <div class="wander-sub-nav fade-up">
     <button class="wander-tab active" onclick="switchTab(this,'tc')">Travel Content</button>
@@ -472,19 +599,28 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Travel Content -->
-
   <div id="panel-tc">
     <div class="tile-grid fade-up">
-      <div class="tile tall">
-        <div class="tile-img ta"><div class="tile-ph">Italy</div></div>
+      <div class="tile tall" style="position:relative;">
+        <div style="position:absolute;top:1rem;left:1rem;z-index:10;background:var(--sienna);color:white;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;padding:0.3rem 0.8rem;font-family:var(--sans);">Coming Soon</div>
+        <div class="tile-img ta" style="background:#C8B89A;position:relative;overflow:hidden;">
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+            <span style="font-size:2rem;">&#127956;</span>
+            <div style="font-family:Georgia,serif;font-style:italic;color:#8B6E52;font-size:1.1rem;">Florence, Italy</div>
+            <div style="font-family:Arial,sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#C4B49A;">Trip in progress</div>
+          </div>
+        </div>
         <div class="tile-body">
           <div class="tile-cat">Travel</div>
-          <div class="tile-title">The Italian Towns Nobody Talks About (But Should)</div>
-          <div class="tile-meta">Trending · TikTok</div>
+          <div class="tile-title">Florence, Italy: Hidden Gems & Slow Travel</div>
+          <div class="tile-meta" style="color:var(--sienna);">Dropping soon &mdash; Tee is there now &#9992;</div>
         </div>
       </div>
       <div class="tile">
-        <div class="tile-img tb"><div class="tile-ph">Weekend drive</div></div>
+        <div class="tile-img tb" style="background:linear-gradient(135deg,#C8D0C4,#A8BCA8);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.4rem;">
+          <span style="font-size:1.8rem;">&#128663;</span>
+          <span style="font-family:Georgia,serif;font-style:italic;font-size:0.85rem;color:#4A6048;text-align:center;padding:0 1rem;">Weekend<br>Road Trip</span>
+        </div>
         <div class="tile-body">
           <div class="tile-cat">Travel</div>
           <div class="tile-title">Best Weekend Drives from Atlanta</div>
@@ -492,7 +628,10 @@ footer { padding: 3rem 1.5rem 2rem; }
         </div>
       </div>
       <div class="tile">
-        <div class="tile-img td"><div class="tile-ph">Savannah</div></div>
+        <div class="tile-img td" style="background:linear-gradient(135deg,#C4C8BC,#A8B4A0);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.4rem;">
+          <span style="font-size:1.8rem;">&#127963;</span>
+          <span style="font-family:Georgia,serif;font-style:italic;font-size:0.85rem;color:#4A5845;text-align:center;padding:0 1rem;">Savannah,<br>Georgia</span>
+        </div>
         <div class="tile-body">
           <div class="tile-cat">Travel</div>
           <div class="tile-title">Savannah in 36 Hours: The Slow Guide</div>
@@ -500,7 +639,10 @@ footer { padding: 3rem 1.5rem 2rem; }
         </div>
       </div>
       <div class="tile">
-        <div class="tile-img tc"><div class="tile-ph">Solo</div></div>
+        <div class="tile-img tc" style="background:linear-gradient(135deg,#C8C0CC,#B4A8BC);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.4rem;">
+          <span style="font-size:1.8rem;">&#9992;</span>
+          <span style="font-family:Georgia,serif;font-style:italic;font-size:0.85rem;color:#5A4866;text-align:center;padding:0 1rem;">Solo<br>Travel</span>
+        </div>
         <div class="tile-body">
           <div class="tile-cat">Travel</div>
           <div class="tile-title">Solo Travel Tips Nobody Tells You</div>
@@ -508,7 +650,10 @@ footer { padding: 3rem 1.5rem 2rem; }
         </div>
       </div>
       <div class="tile">
-        <div class="tile-img te"><div class="tile-ph">Caribbean</div></div>
+        <div class="tile-img te" style="background:linear-gradient(135deg,#B8CCC8,#98B4B0);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.4rem;">
+          <span style="font-size:1.8rem;">&#127958;</span>
+          <span style="font-family:Georgia,serif;font-style:italic;font-size:0.85rem;color:#2A5854;text-align:center;padding:0 1rem;">Caribbean<br>Islands</span>
+        </div>
         <div class="tile-body">
           <div class="tile-cat">Travel</div>
           <div class="tile-title">Caribbean on a Budget: Islands Worth Every Dollar</div>
@@ -519,7 +664,6 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Trip Planning -->
-
   <div id="panel-tp" style="display:none">
     <div class="tile-grid fade-up">
       <div class="tile wide">
@@ -543,7 +687,7 @@ footer { padding: 3rem 1.5rem 2rem; }
         <div class="tile-body">
           <div class="tile-cat">Trip Planning</div>
           <div class="tile-title">The Only Packing List You'll Ever Need</div>
-          <div class="tile-meta">Carry-on · Check-in</div>
+          <div class="tile-meta">Carry-on &middot; Check-in</div>
         </div>
       </div>
       <div class="tile">
@@ -558,7 +702,6 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Destination Guides -->
-
   <div id="panel-dg" style="display:none">
     <div class="tile-grid fade-up">
       <div class="tile tall">
@@ -566,7 +709,7 @@ footer { padding: 3rem 1.5rem 2rem; }
         <div class="tile-body">
           <div class="tile-cat">Destination Guide</div>
           <div class="tile-title">Atlanta: The Ultimate Local's Weekend Guide</div>
-          <div class="tile-meta">City guide · Updated 2025</div>
+          <div class="tile-meta">City guide &middot; Updated 2025</div>
         </div>
       </div>
       <div class="tile">
@@ -597,30 +740,137 @@ footer { padding: 3rem 1.5rem 2rem; }
         <div class="tile-img te"><div class="tile-ph">Mexico</div></div>
         <div class="tile-body">
           <div class="tile-cat">Destination Guide</div>
-          <div class="tile-title">Beyond Cancún: Mexico's Underrated Beach Towns</div>
+          <div class="tile-title">Beyond Cancun: Mexico's Underrated Beach Towns</div>
           <div class="tile-meta">International guide</div>
         </div>
       </div>
     </div>
+
+    <!-- NOLA Must-Do Classics -->
+    <div class="nola-classics fade-up">
+      <div class="nola-classics-header">
+        <div class="nola-classics-label">New Orleans &middot; Must-Do Classics</div>
+        <div class="nola-classics-title">Before you leave <em>NOLA.</em></div>
+      </div>
+      <div class="nola-pair">
+
+        <!-- DRAGO'S -->
+        <div class="nola-card">
+          <!--
+            VIDEO: Upload IMG_5761.MOV or IMG_5762.MOV to GitHub
+            and reference as: <video src="IMG_5762.MOV" ...>
+            OR embed a YouTube/TikTok URL via <iframe>
+          -->
+          <video
+            src="dragos.mov"
+            autoplay muted loop playsinline
+            class="nola-card-video"
+            style="width:100%;aspect-ratio:9/16;max-height:480px;object-fit:cover;display:block;background:#3D2314;">
+          </video>
+          <div class="nola-card-overlay"></div>
+          <div class="nola-card-body">
+            <div class="nola-card-tag">Seafood &middot; Est. 1970</div>
+            <div class="nola-card-name">Drago's <em>Seafood.</em></div>
+            <div class="nola-card-desc">They invented the charbroiled oyster. Since 1970, Drago's has been the kind of place NOLA locals bring out-of-towners to prove a point. Order the oysters. Order the mac and cheese. You'll understand.</div>
+            <span class="nola-card-pill">✦ NOLA Classic</span>
+          </div>
+        </div>
+
+        <!-- HANSEN'S SNO-BLIZ -->
+        <div class="nola-card">
+          <!--
+            VIDEO: Upload IMG_5867.MOV (hero sno-bliz close-up) to GitHub
+            Alt: IMG_5868.MOV (street corner crowd shot) for more story/context
+            Reference as: <video src="IMG_5867.MOV" ...>
+          -->
+          <video
+            src="hansens.mov"
+            autoplay muted loop playsinline
+            class="nola-card-video"
+            style="width:100%;aspect-ratio:9/16;max-height:480px;object-fit:cover;display:block;background:#1A2E1A;">
+          </video>
+          <div class="nola-card-overlay"></div>
+          <div class="nola-card-body">
+            <div class="nola-card-tag">Sno-Balls &middot; Est. 1934</div>
+            <div class="nola-card-name">Hansen's <em>Sno-Bliz.</em></div>
+            <div class="nola-card-desc">Three generations, one machine, one block on Tchoupitoulas. Ernest Hansen invented the sno-ball machine in 1934 and the family has been making them ever since. The line is always there. The line is always worth it.</div>
+            <span class="nola-card-pill">✦ NOLA Classic</span>
+          </div>
+        </div>
+
+        <!-- CAFE DU MONDE -->
+        <div class="nola-card">
+          <!--
+            VIDEO: Upload IMG_5788.MOV (kitchen window shot) to GitHub
+            Best frame: the cook working dough through the glass — pure craft.
+          -->
+          <video
+            src="cafedumonde.mov"
+            autoplay muted loop playsinline
+            class="nola-card-video"
+            style="width:100%;aspect-ratio:9/16;max-height:480px;object-fit:cover;display:block;background:#2C1A0E;">
+          </video>
+          <div class="nola-card-overlay"></div>
+          <div class="nola-card-body">
+            <div class="nola-card-tag">Cafe &middot; Since 1862</div>
+            <div class="nola-card-name">Cafe Du <em>Monde.</em></div>
+            <div class="nola-card-desc">Open 24 hours, since 1862, right on the French Quarter. Beignets dusted in powdered sugar, cafe au lait in a branded mug, and a kitchen you can watch through the glass. This is the NOLA morning ritual.</div>
+            <span class="nola-card-pill">✦ NOLA Classic</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END NOLA CLASSICS -->
+
+    <!-- NOLA HIDDEN GEM: SOUTHERN'S -->
+    <div class="nola-gem fade-up">
+      <div class="nola-gem-video">
+        <!--
+          VIDEO: Upload IMG_5801.MOV (hero food shot) to GitHub.
+          Reference as: <video src="IMG_5801.MOV" ...>
+          Alt: IMG_5797.MOV (entrance) or IMG_5802.MOV (basket close-up)
+        -->
+        <video
+          src="southerns.mov"
+          autoplay muted loop playsinline
+          style="width:100%;height:100%;object-fit:cover;display:block;min-height:420px;max-height:520px;background:#2C1A0E;">
+        </video>
+      </div>
+      <div class="nola-gem-content">
+        <div class="nola-gem-badge"><span class="nola-gem-badge-dot"></span> NOLA Area Hidden Gem</div>
+        <div class="nola-gem-name">Southern's <em>Metairie.</em></div>
+        <div class="nola-gem-location">📍 Metairie, LA &middot; Just outside New Orleans</div>
+        <p class="nola-gem-desc">The tourists are eating beignets on Bourbon Street. You are at Southern's. No frills, no hype, just a red entrance mat, a line out the door, and the kind of fried chicken sandwich that makes you question every meal you have had before it. This is what locals actually eat.</p>
+        <div class="nola-gem-tags">
+          <span class="nola-gem-tag featured">✦ Hidden Gem</span>
+          <span class="nola-gem-tag">Fried Chicken</span>
+          <span class="nola-gem-tag">Metairie</span>
+          <span class="nola-gem-tag">Local Favorite</span>
+          <span class="nola-gem-tag">Worth the Drive</span>
+        </div>
+      </div>
+    </div>
+    <!-- END SOUTHERN'S -->
+
   </div>
 </section>
 
-<!-- ═══ & — HIDDEN GEMS ═══ -->
-
+<!-- --- & - HIDDEN GEMS --- -->
 <section class="content-section amp-section" id="hidden-gems">
   <div class="content-header fade-up">
     <div>
-      <div class="section-kicker">&amp; — Hidden Gems</div>
+      <div class="section-kicker">&amp; - Hidden Gems</div>
       <h2 class="section-title">The spots they <em>don't tell you about.</em></h2>
     </div>
-    <a href="https://www.instagram.com/wanderandwit_" target="_blank" class="view-all">See on Instagram →</a>
+    <a href="https://www.instagram.com/wanderandwit_" target="_blank" class="view-all">See on Instagram &rarr;</a>
   </div>
   <div class="gems-grid fade-up">
     <div class="gem-card">
       <span class="gem-icon">🍑</span>
       <div class="gem-label">ATL Spots</div>
       <div class="gem-title">Atlanta's Best-Kept Secrets</div>
-      <div class="gem-desc">Restaurants, bars, and neighborhoods that don't make the lists — but should.</div>
+      <div class="gem-desc">Restaurants, bars, and neighborhoods that don't make the lists - but should.</div>
     </div>
     <div class="gem-card">
       <span class="gem-icon">🌟</span>
@@ -647,7 +897,7 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="tile-body">
         <div class="tile-cat">ATL Spots</div>
         <div class="tile-title">10 Atlanta Spots Locals Actually Go To (Not the Tourists)</div>
-        <div class="tile-meta">Atlanta · Hidden gems</div>
+        <div class="tile-meta">Atlanta &middot; Hidden gems</div>
       </div>
     </div>
     <div class="tile">
@@ -659,11 +909,11 @@ footer { padding: 3rem 1.5rem 2rem; }
       </div>
     </div>
     <div class="tile">
-      <div class="tile-img td"><div class="tile-ph">Black-owned café</div></div>
+      <div class="tile-img td"><div class="tile-ph">Black Coffee ATL</div></div>
       <div class="tile-body">
-        <div class="tile-cat">Black-Owned</div>
-        <div class="tile-title">Black-Owned Restaurants in Atlanta You Should Know Right Now</div>
-        <div class="tile-meta">Dining · Support local</div>
+        <div class="tile-cat">Black-Owned ✊🏾</div>
+        <div class="tile-title">Black Coffee ATL: Great Coffee Inside a 1947 Church</div>
+        <div class="tile-meta">West ATL &middot; Black-Owned</div>
       </div>
     </div>
     <div class="tile">
@@ -682,17 +932,260 @@ footer { padding: 3rem 1.5rem 2rem; }
         <div class="tile-meta">North Georgia</div>
       </div>
     </div>
+
+    <!-- BREWDOG — ATL BELTLINE VIDEO TILE -->
+    <div class="atl-video-tile tile">
+      <!--
+        VIDEO: Upload IMG_5169.MOV to GitHub
+        Reference as: <video src="IMG_5169.MOV" ...>
+      -->
+      <video
+        src="brewdog.mov"
+        autoplay muted loop playsinline
+        style="width:100%;aspect-ratio:16/7;object-fit:cover;display:block;background:#1A2028;">
+      </video>
+      <div class="atl-video-overlay"></div>
+      <div class="atl-video-body">
+        <div class="atl-video-left">
+          <div class="tile-cat" style="color:rgba(255,255,255,0.55);">ATL Spots &middot; Beltline</div>
+          <div class="atl-video-title">BrewDog Atlanta</div>
+          <div class="atl-video-meta">Disco balls, craft beer &amp; botanical booths on the Beltline</div>
+        </div>
+        <span class="atl-video-pill">✦ ATL Spot</span>
+      </div>
+    </div>
+
+    <!-- FRED'S MEAT & BREAD — Krog Street Market -->
+    <div class="atl-video-tile tile">
+      <!--
+        VIDEO: Upload IMG_5180.MOV to GitHub
+        Reference as: <video src="IMG_5180.MOV" ...>
+      -->
+      <video
+        src="freds.mov"
+        autoplay muted loop playsinline
+        style="width:100%;aspect-ratio:16/7;object-fit:cover;display:block;background:#1A1410;">
+      </video>
+      <div class="atl-video-overlay"></div>
+      <div class="atl-video-body">
+        <div class="atl-video-left">
+          <div class="tile-cat" style="color:rgba(255,255,255,0.55);">ATL Spots &middot; Krog Street Market</div>
+          <div class="atl-video-title">Fred's Meat &amp; Bread</div>
+          <div class="atl-video-meta">Avery's sodas, a gold bull, hexagonal tile &amp; handwritten menus on the Beltline</div>
+        </div>
+        <span class="atl-video-pill">✦ ATL Spot</span>
+      </div>
+    </div>
+
+    <!-- NESPRESSO BOUTIQUE — Lenox Square -->
+    <div class="tile">
+      <div class="tile-img tb"><div class="tile-ph" style="display:flex;flex-direction:column;gap:0.4rem;align-items:center;"><span style="font-size:1.5rem;">☕</span><span style="font-size:0.75rem;font-family:var(--serif);font-style:italic;">Nespresso</span></div></div>
+      <div class="tile-body">
+        <div class="tile-cat">ATL Spots &middot; Lenox Square</div>
+        <div class="tile-title">The Nespresso Boutique Has a Moss Wall Worth the Visit</div>
+        <div class="tile-meta">Buckhead &middot; Hidden in plain sight</div>
+      </div>
+    </div>
+
   </div>
+
+  <!-- ═══ INDIEHOUSE FRAGRANCES — FEATURED SPOT ═══ -->
+  <div class="indie-feature fade-up">
+    <div class="indie-feature-header">
+      <div class="section-kicker">Featured Spot &middot; ATL Spots</div>
+      <h3 class="section-title">Indiehouse <em>Fragrances.</em></h3>
+    </div>
+    <div class="indie-grid">
+      <div class="indie-main-video">
+        <!--
+          HERO VIDEO: Rename & upload to GitHub
+          Best option: 1758999312.mp4 (21s exterior rooftop sign)
+          Reference as: <video src="indiehouse-exterior.mp4" ...>
+        -->
+        <video
+          src="indiehouse-exterior.mp4"
+          autoplay muted loop playsinline
+          style="width:100%;min-height:480px;max-height:560px;object-fit:cover;display:block;background:#1A1A2E;">
+        </video>
+      </div>
+      <div class="indie-side">
+        <div class="indie-side-video">
+          <!--
+            SIDE VIDEO 1: 1758999161.mp4 (6.5s — THE GOLD SKELETON)
+            Reference as: <video src="indiehouse-skeleton.mp4" ...>
+          -->
+          <video
+            src="indiehouse-skeleton.mp4"
+            autoplay muted loop playsinline
+            style="width:100%;height:100%;object-fit:cover;display:block;background:#2C1A0E;">
+          </video>
+        </div>
+        <div class="indie-copy">
+          <div class="section-kicker" style="margin-bottom:0.6rem;">Scent Boutique &middot; ATL</div>
+          <div class="indie-copy-title">Where finding your <em>signature scent</em> is the whole experience.</div>
+          <p class="indie-copy-desc">Indiehouse carries over 100 indie and niche fragrance brands you won't find at any mall counter. But the real reason to go? Book a consultation, sit in one of the reserved leather chairs, and let them build something made for you. Oh, and the gold skeleton keeps watch over the whole thing.</p>
+          <div class="indie-tags">
+            <span class="indie-tag">✦ ATL Spot</span>
+            <span class="indie-tag">Fragrance</span>
+            <span class="indie-tag">Blending Experience</span>
+            <span class="indie-tag">Niche &amp; Indie Brands</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ═══ END INDIEHOUSE ═══ -->
+
+  <!-- ═══ BROWN SUGAR BABE — FEATURED SPOT ═══ -->
+  <div class="bsb-feature fade-up">
+    <div class="bsb-grid">
+      <!--
+        BSB VIDEO GRID — Rename files before uploading to GitHub:
+        IMG_1537.MOV  → bsb-display.mov    (arched shelf + MADAM bottle)
+        IMG_1543.MOV  → bsb-bag.mov        (hand holding BSB shopping bag)
+        IMG_1528.MOV  → bsb-product.mov    (Crème De La Crème on gold tray)
+        F4C47919.mov  → bsb-champagne.mov  (grand opening champagne)
+      -->
+      <div class="bsb-cell">
+        <video src="bsb-display.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:#2C1008;"></video>
+        <div class="bsb-cell-overlay"></div>
+        <div class="bsb-cell-label">The Store</div>
+      </div>
+      <div class="bsb-cell">
+        <video src="bsb-bag.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:#1A0C06;"></video>
+        <div class="bsb-cell-overlay"></div>
+        <div class="bsb-cell-label">The Bag</div>
+      </div>
+      <div class="bsb-cell">
+        <video src="bsb-product.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:#200A04;"></video>
+        <div class="bsb-cell-overlay"></div>
+        <div class="bsb-cell-label">The Product</div>
+      </div>
+      <div class="bsb-cell">
+        <video src="bsb-champagne.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:#141010;"></video>
+        <div class="bsb-cell-overlay"></div>
+        <div class="bsb-cell-label">Grand Opening</div>
+      </div>
+    </div>
+    <div class="bsb-header">
+      <div>
+        <div class="bsb-badge">✊🏾 Black-Owned &middot; Est. 2018</div>
+        <div class="bsb-title">Brown Sugar <em>Babe.</em></div>
+      </div>
+      <div>
+        <p class="bsb-right-desc">BSB just opened their flagship store and it feels like a moment. Body oils named "Marry Me", "Crème De La Crème", and "Madam" — products that were built with intention, packaged like luxury, and priced like they want you to actually have them. This is what it looks like when Black women build for Black women.</p>
+        <div class="bsb-tags">
+          <span class="bsb-tag gold">✦ Black-Owned</span>
+          <span class="bsb-tag">Flagship Grand Opening</span>
+          <span class="bsb-tag">Body Care</span>
+          <span class="bsb-tag">ATL</span>
+          <span class="bsb-tag">Support Local</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ═══ END BROWN SUGAR BABE ═══ -->
+
+  <!-- ═══ BLACK COFFEE ATL — FEATURED SPOT ═══ -->
+  <div class="gem-video-feature fade-up" id="black-coffee-atl">
+    <div class="gem-video-header">
+      <div>
+        <div class="section-kicker">Featured Spot &middot; Black-Owned ✊🏾</div>
+        <h3 class="section-title">Black Coffee <em>ATL.</em></h3>
+      </div>
+      <a href="https://www.theblackcoffeecompany.com" target="_blank" class="view-all">Visit Website →</a>
+    </div>
+
+    <div class="gem-video-layout">
+      <div class="gem-video-main">
+        <!--
+          ═══════════════════════════════════════════════════════════
+          VIDEO EMBED — Two options:
+
+          OPTION A (Recommended): Upload to YouTube/TikTok, then embed:
+            Replace the <video> tag below with:
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+          OPTION B: Self-hosted — upload the .mov files to GitHub
+            alongside index.html and use:
+            <video src="copy_4EEB1247.mov" ...>
+          ═══════════════════════════════════════════════════════════
+        -->
+        <div class="gem-video-wrap">
+          <video
+            src="PASTE_VIDEO_URL_OR_PATH_HERE"
+            poster="PASTE_THUMBNAIL_URL_HERE"
+            controls
+            playsinline
+            style="width:100%;max-height:560px;object-fit:cover;display:block;background:var(--charcoal);">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="gem-video-sidebar">
+        <!--
+          PHOTO SIDEBAR — paste Google Photos direct image URLs below.
+          Format: https://lh3.googleusercontent.com/pw/...=w800-h600
+          Change the end of each URL to =w600-h600 for square crops.
+        -->
+        <div class="gem-video-thumb">
+          <img src="PASTE_LATTE_PHOTO_URL_HERE" alt="Black Coffee ATL — signature latte" />
+        </div>
+        <div class="gem-video-thumb">
+          <img src="PASTE_SANDWICH_PHOTO_URL_HERE" alt="Black Coffee ATL — ATL All In sandwich" />
+        </div>
+        <div class="gem-video-thumb">
+          <img src="PASTE_LAVENDER_DRINK_PHOTO_URL_HERE" alt="Black Coffee ATL — lavender iced drink" />
+        </div>
+      </div>
+    </div>
+
+    <div class="gem-video-caption">
+      <div class="gem-video-caption-name">Black Coffee <em>ATL</em></div>
+      <div class="gem-video-caption-desc">Tucked inside a converted 1947 Baptist church in West Atlanta, Black Coffee ATL is one of those places that earns its reputation the right way — through the people, the craft, and the story the walls tell. Order the "Light Skin Keisha" (vanilla, honey, lavender) or the "ATL All In" sandwich and stay a while. This is what Black-owned and community-rooted looks like.</div>
+      <div class="gem-video-tags">
+        <span class="gem-video-tag black-owned">Black-Owned ✊🏾</span>
+        <span class="gem-video-tag">West Atlanta</span>
+        <span class="gem-video-tag">Coffee</span>
+        <span class="gem-video-tag">Converted Church</span>
+        <span class="gem-video-tag">Hidden Gem</span>
+      </div>
+    </div>
+
+    <!-- Photo strip — menu + interior shots -->
+    <div class="gem-photo-strip" style="margin-top:2px;">
+      <div class="gem-photo-cell">
+        <img src="PASTE_MENU_PHOTO_URL_HERE" alt="Black Coffee ATL menu" />
+        <div class="ph-overlay"><span class="ph-label">The Menu</span></div>
+      </div>
+      <div class="gem-photo-cell">
+        <img src="PASTE_INTERIOR_PHOTO_URL_HERE" alt="Black Coffee ATL interior — 1947 church cornerstone" />
+        <div class="ph-overlay"><span class="ph-label">Est. 1947</span></div>
+      </div>
+      <div class="gem-photo-cell">
+        <img src="PASTE_BARISTA_PHOTO_URL_HERE" alt="Black Coffee ATL barista" />
+        <div class="ph-overlay"><span class="ph-label">The Craft</span></div>
+      </div>
+      <div class="gem-photo-cell">
+        <img src="PASTE_DRINK_CLOSEUP_URL_HERE" alt="Black Coffee ATL signature drink" />
+        <div class="ph-overlay"><span class="ph-label">Sip Worthy</span></div>
+      </div>
+    </div>
+
+  </div>
+  <!-- ═══ END BLACK COFFEE ATL ═══ -->
+
 </section>
 
-<!-- ═══ TEE'S ATL ITINERARY ═══ -->
-
+<!-- --- TEE'S ATL ITINERARY --- -->
 <section class="itinerary-section" id="atl-guide">
   <div class="content-header fade-up">
     <div>
-      <div class="section-kicker">&amp; — Hidden Gems · Featured Guide</div>
+      <div class="section-kicker">&amp; - Hidden Gems &middot; Featured Guide</div>
       <h2 class="section-title">Tee's ATL: <em>7 Days Done Right.</em></h2>
-      <p class="itinerary-intro">No tourist traps, just vibes. Here's how a week in Atlanta goes when your guide knows every layer of the city — the culture, the creativity, and the joy.</p>
+      <p class="itinerary-intro">No tourist traps, just vibes. Here's how a week in Atlanta goes when your guide knows every layer of the city - the culture, the creativity, and the joy.</p>
     </div>
   </div>
   <div class="itinerary-grid fade-up">
@@ -704,8 +1197,8 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Party Brunch &amp; Afro-Caribbean Dinner</div>
         <div class="itin-spots">
-          <span class="itin-spot">Garden Parc ATL — bottomless mimosas, live DJ &amp; unlimited food</span>
-          <span class="itin-spot">Rock Steady — Afro-Caribbean cocktails &amp; dinner vibes</span>
+          <span class="itin-spot">Garden Parc ATL - bottomless mimosas, live DJ &amp; unlimited food</span>
+          <span class="itin-spot">Rock Steady - Afro-Caribbean cocktails &amp; dinner vibes</span>
         </div>
       </div>
     </div>
@@ -717,9 +1210,9 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Wellness, Free Plants &amp; Classy Dinner</div>
         <div class="itin-spots">
-          <span class="itin-spot">iGetJuiced — best açai bowls in the city</span>
-          <span class="itin-spot">Seed ATL — espresso martinis + free plants (Plantini event)</span>
-          <span class="itin-spot">The Select ATL — ambient, classy, chef's kiss</span>
+          <span class="itin-spot">iGetJuiced - best acai bowls in the city</span>
+          <span class="itin-spot">Seed ATL - espresso martinis + free plants (Plantini event)</span>
+          <span class="itin-spot">The Select ATL - ambient, classy, chef's kiss</span>
         </div>
       </div>
     </div>
@@ -731,8 +1224,8 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Spa Day at the Four Seasons &amp; Skyline Sushi</div>
         <div class="itin-spots">
-          <span class="itin-spot">Four Seasons Spa — arguably the best spa experience in Atlanta</span>
-          <span class="itin-spot">O-Ku Atlanta — sushi, skyline views &amp; curated cocktails</span>
+          <span class="itin-spot">Four Seasons Spa - arguably the best spa experience in Atlanta</span>
+          <span class="itin-spot">O-Ku Atlanta - sushi, skyline views &amp; curated cocktails</span>
         </div>
       </div>
     </div>
@@ -744,10 +1237,10 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Nature, Black-Owned Coffee &amp; Grown-Up Arcade</div>
         <div class="itin-spots">
-          <span class="itin-spot">Cascade Springs Nature Preserve — scenic escape</span>
-          <span class="itin-spot">Black Coffee ATL — Black-owned &amp; full of charm ✊🏾</span>
-          <span class="itin-spot">Chattahoochee Food Works — food halls as a love language</span>
-          <span class="itin-spot">Your 3rd Spot — games, drinks &amp; grown-up fun</span>
+          <span class="itin-spot">Cascade Springs Nature Preserve - scenic escape</span>
+          <span class="itin-spot">Black Coffee ATL - Black-owned &amp; full of charm ✊🏾</span>
+          <span class="itin-spot">Chattahoochee Food Works - food halls as a love language</span>
+          <span class="itin-spot">Your 3rd Spot - games, drinks &amp; grown-up fun</span>
         </div>
       </div>
     </div>
@@ -759,8 +1252,8 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">90s R&amp;B Paint Night &amp; Hidden Gem Tacos</div>
         <div class="itin-spots">
-          <span class="itin-spot">Dine &amp; Design — paint &amp; sip with a millennial, 90s R&amp;B twist</span>
-          <span class="itin-spot">CT Taqueria (Gwinnett) — Tulum vibes without leaving the city</span>
+          <span class="itin-spot">Dine &amp; Design - paint &amp; sip with a millennial, 90s R&amp;B twist</span>
+          <span class="itin-spot">CT Taqueria (Gwinnett) - Tulum vibes without leaving the city</span>
         </div>
       </div>
     </div>
@@ -772,8 +1265,8 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Korean BBQ &amp; Wine Country Golden Hour</div>
         <div class="itin-spots">
-          <span class="itin-spot">THRILL Korean BBQ — bold energy, bolder flavors</span>
-          <span class="itin-spot">Château Élan — wine tasting, sunset views &amp; content-worthy moments</span>
+          <span class="itin-spot">THRILL Korean BBQ - bold energy, bolder flavors</span>
+          <span class="itin-spot">Chteau Elan - wine tasting, sunset views &amp; content-worthy moments</span>
         </div>
       </div>
     </div>
@@ -785,17 +1278,16 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="itin-day-body">
         <div class="itin-day-title">Luxe Brunch, PCM Window Shopping &amp; Cozy Wind-Down</div>
         <div class="itin-spots">
-          <span class="itin-spot">Dirty Rascal — Italian-American brunch with big flavor &amp; luxe décor</span>
-          <span class="itin-spot">Black Coffee Atlanta — one more for the road ✊🏾</span>
-          <span class="itin-spot">Ponce City Market — light window shopping &amp; city energy</span>
+          <span class="itin-spot">Dirty Rascal - Italian-American brunch with big flavor &amp; luxe decor</span>
+          <span class="itin-spot">Black Coffee Atlanta - one more for the road ✊🏾</span>
+          <span class="itin-spot">Ponce City Market - light window shopping &amp; city energy</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ WIT ═══ -->
-
+<!-- --- WIT --- -->
 <section class="wit-section" id="wit">
   <div class="fade-up">
     <div class="section-kicker">Wit</div>
@@ -818,7 +1310,7 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="wit-num">03</div>
       <span class="wit-icon">🎬</span>
       <div class="wit-card-title">Behind the Scenes</div>
-      <div class="wit-card-desc">How Wander &amp; Wit actually does what we do — from research to content creation to real travel moments.</div>
+      <div class="wit-card-desc">How Wander &amp; Wit actually does what we do - from research to content creation to real travel moments.</div>
     </div>
   </div>
   <div class="wit-posts fade-up">
@@ -855,8 +1347,7 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 </section>
 
-<!-- ═══ INSTAGRAM FEED ═══ -->
-
+<!-- --- INSTAGRAM FEED --- -->
 <section class="ig-section" id="instagram">
   <div class="ig-header fade-up">
     <div>
@@ -868,21 +1359,10 @@ footer { padding: 3rem 1.5rem 2rem; }
       </a>
     </div>
   </div>
-  <script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-b0283d7d-b318-4af4-82da-ac3932fa408b" data-elfsight-app-lazy></div>
-  <div class="ig-grid fade-up">
-    <div class="ig-cell"><div class="ig-bg iga">ATL Eats</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-    <div class="ig-cell"><div class="ig-bg igb">Road trip</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-    <div class="ig-cell"><div class="ig-bg igc">Hidden gem</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-    <div class="ig-cell"><div class="ig-bg igd">Small town</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-    <div class="ig-cell"><div class="ig-bg ige">Budget tip</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-    <div class="ig-cell"><div class="ig-bg igf">BTS</div><div class="ig-ov"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div></div>
-  </div>
-  <p class="ig-note fade-up">Live feed activates when connected — <a href="mailto:tee@wanderandwit.org" style="color:var(--sienna)">add your Instagram widget here</a></p>
+  <!-- Placeholder removed — Elfsight feed above is now active -->
 </section>
 
-<!-- ═══ CTAs: BE FEATURED + COLLABORATE ═══ -->
-
+<!-- --- CTAs: BE FEATURED + COLLABORATE --- -->
 <div class="cta-section" id="be-featured">
   <div class="cta-panel cta-feature fade-up">
     <div class="cta-ring"></div>
@@ -895,47 +1375,45 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="cta-perk">Small towns worth the drive</div>
       <div class="cta-perk">Local events &amp; pop-ups</div>
     </div>
-    <a href="mailto:tee@wanderandwit.org" class="cta-btn cta-btn-dark">Submit Your Spot →</a>
+    <a href="mailto:tee@wanderandwit.org" class="cta-btn cta-btn-dark">Submit Your Spot &rarr;</a>
   </div>
   <div class="cta-panel cta-collab fade-up" id="collaborate">
     <div class="cta-ring"></div>
     <div class="cta-ey">Collaborate</div>
     <h2 class="cta-title">Let's build<br><em>something great.</em></h2>
-    <p class="cta-desc">Brands, tourism boards, and businesses — let's create content that resonates with our audience and yours.</p>
+    <p class="cta-desc">Brands, tourism boards, and businesses - let's create content that resonates with our audience and yours.</p>
     <div class="cta-perks">
       <div class="cta-perk">Sponsored content &amp; destination campaigns</div>
       <div class="cta-perk">Brand partnerships &amp; product features</div>
       <div class="cta-perk">Social takeovers &amp; travel collabs</div>
       <div class="cta-perk">Event coverage &amp; press trips</div>
     </div>
-    <a href="mailto:tee@wanderandwit.org" class="cta-btn cta-btn-light">Start a Conversation →</a>
+    <a href="mailto:tee@wanderandwit.org" class="cta-btn cta-btn-light">Start a Conversation &rarr;</a>
   </div>
 </div>
 
-<!-- ═══ MEDIA KIT ═══ -->
-
+<!-- --- MEDIA KIT --- -->
 <section class="mk-section" id="media-kit">
 
   <!-- Creator intro -->
-
   <div class="mk-creator fade-up">
     <div class="mk-creator-photo">
       <!--
-        ════════════════════════════════════════════
+        --------------------------------------------
         TEE'S PHOTO: swap the placeholder div below
-        with: <img src="YOUR_IMAGE_URL" alt="Tee Archie — Wander &amp; Wit" />
-        ════════════════════════════════════════════
+        with: <img src="YOUR_IMAGE_URL" alt="Tee Archie - Wander &amp; Wit" />
+        --------------------------------------------
       -->
       <div class="mk-photo-placeholder" style="padding:0;overflow:hidden;">
-        <img src="IMG_1278.jpeg" alt="Tee Archie — Founder of Wander &amp; Wit" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
+        <img src="tee.jpg" alt="Tee Archie - Founder of Wander &amp; Wit" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
       </div>
     </div>
     <div class="mk-creator-text">
       <div class="mk-featured-badge">✦ As Featured In: <strong>Shoutout Atlanta</strong></div>
       <div class="section-kicker" style="margin-top:1.2rem;">About the Creator</div>
       <h2 class="section-title">Hi, I'm <em>Tee.</em></h2>
-      <p class="mk-desc">"I realized I was constantly curating experiences, planning epic trips, and helping others find joy in the little things. That's when it clicked — I wasn't just sharing travel recs, I was building a lifestyle brand rooted in joy, ease, and intention."</p>
-      <p class="mk-desc">I don't just share where to go — I share how it feels. Whether it's a Black-owned spa in Miami or a beachside resort in Cancún, my content makes travel feel like home and look like art. Wander &amp; Wit is a movement for people — especially Black travelers — to feel seen, inspired, and reminded that they deserve beautiful experiences too.</p>
+      <p class="mk-desc">"I realized I was constantly curating experiences, planning epic trips, and helping others find joy in the little things. That's when it clicked - I wasn't just sharing travel recs, I was building a lifestyle brand rooted in joy, ease, and intention."</p>
+      <p class="mk-desc">I don't just share where to go - I share how it feels. Whether it's a Black-owned spa in Miami or a beachside resort in Cancun, my content makes travel feel like home and look like art. Wander &amp; Wit is a movement for people - especially Black travelers - to feel seen, inspired, and reminded that they deserve beautiful experiences too.</p>
       <div class="mk-location">📍 Based in Atlanta. Exploring everywhere.</div>
       <div class="mk-creator-handles">
         <a href="https://www.instagram.com/wanderandwit_" target="_blank" class="mk-handle-row">
@@ -949,7 +1427,6 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Stats -->
-
   <div class="mk-stats-full fade-up">
     <div class="mk-stat-full">
       <div class="mk-stat-num">53K+</div>
@@ -960,12 +1437,12 @@ footer { padding: 3rem 1.5rem 2rem; }
       <div class="mk-stat-label">Unique Viewers<br>on TikTok</div>
     </div>
     <div class="mk-stat-full">
-      <div class="mk-stat-num">77–86%</div>
+      <div class="mk-stat-num">77-86%</div>
       <div class="mk-stat-label">Female Audience<br>Across Platforms</div>
     </div>
     <div class="mk-stat-full">
       <div class="mk-stat-num">72%+</div>
-      <div class="mk-stat-label">Viewers Ages<br>25–44</div>
+      <div class="mk-stat-label">Viewers Ages<br>25-44</div>
     </div>
     <div class="mk-stat-full">
       <div class="mk-stat-num">92%</div>
@@ -978,19 +1455,18 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Audience detail rows -->
-
   <div class="mk-audience fade-up">
     <div class="mk-aud-item">
       <div class="mk-aud-label">Primary Location</div>
-      <div class="mk-aud-val">90%+ United States — with growing reach in Canada, UK &amp; Mexico</div>
+      <div class="mk-aud-val">90%+ United States - with growing reach in Canada, UK &amp; Mexico</div>
     </div>
     <div class="mk-aud-item">
       <div class="mk-aud-label">Discovery Rate</div>
-      <div class="mk-aud-val">Up to 100% non-follower reach per post — content consistently finds new eyes</div>
+      <div class="mk-aud-val">Up to 100% non-follower reach per post - content consistently finds new eyes</div>
     </div>
     <div class="mk-aud-item">
       <div class="mk-aud-label">TikTok Search Traffic</div>
-      <div class="mk-aud-val">22.7% of views from active search — organic SEO value for brand partners</div>
+      <div class="mk-aud-val">22.7% of views from active search - organic SEO value for brand partners</div>
     </div>
     <div class="mk-aud-item">
       <div class="mk-aud-label">Community Focus</div>
@@ -999,7 +1475,6 @@ footer { padding: 3rem 1.5rem 2rem; }
   </div>
 
   <!-- Services + Packages -->
-
   <div class="mk-services fade-up">
     <div class="mk-services-header">
       <div class="section-kicker">Work With Tee</div>
@@ -1007,87 +1482,83 @@ footer { padding: 3rem 1.5rem 2rem; }
       <p class="mk-services-sub">All partnerships subject to brand alignment review</p>
     </div>
 
-```
-<div class="mk-services-grid">
-  <div class="mk-service">
-    <div class="mk-service-name">Dedicated Reel or TikTok</div>
-    <div class="mk-service-price">Starting from $150</div>
-    <div class="mk-service-desc">Full video featuring your brand, product, or destination. Includes concept, filming, editing, captions &amp; posting across both platforms.</div>
-  </div>
-  <div class="mk-service">
-    <div class="mk-service-name">Brand Mention</div>
-    <div class="mk-service-price">Starting from $75</div>
-    <div class="mk-service-desc">Natural, authentic integration of your brand within existing organic content. Feels like a recommendation, not an ad.</div>
-  </div>
-  <div class="mk-service">
-    <div class="mk-service-name">Instagram &amp; TikTok Stories</div>
-    <div class="mk-service-price">Starting from $50</div>
-    <div class="mk-service-desc">3–5 story frames featuring your brand with tag or link. High visibility, immediate engagement.</div>
-  </div>
-  <div class="mk-service">
-    <div class="mk-service-name">UGC Content Package</div>
-    <div class="mk-service-price">Starting from $200</div>
-    <div class="mk-service-desc">3–5 original branded content assets delivered directly to you for use on your own platforms. No posting required.</div>
-  </div>
-</div>
-
-<div class="mk-packages-title">Signature Packages</div>
-<div class="mk-packages-grid">
-  <div class="mk-package">
-    <div class="mk-pkg-name">The Hidden Gem</div>
-    <div class="mk-pkg-price">From $300</div>
-    <div class="mk-pkg-tag">Best for local businesses &amp; pop-ups</div>
-    <div class="mk-pkg-includes">
-      <span>✦ 1 Dedicated Reel/TikTok</span>
-      <span>✦ 3 Stories</span>
-      <span>✦ Brand tag across platforms</span>
+    <div class="mk-services-grid">
+      <div class="mk-service">
+        <div class="mk-service-name">Dedicated Reel or TikTok</div>
+        <div class="mk-service-price">Starting from $150</div>
+        <div class="mk-service-desc">Full video featuring your brand, product, or destination. Includes concept, filming, editing, captions &amp; posting across both platforms.</div>
+      </div>
+      <div class="mk-service">
+        <div class="mk-service-name">Brand Mention</div>
+        <div class="mk-service-price">Starting from $75</div>
+        <div class="mk-service-desc">Natural, authentic integration of your brand within existing organic content. Feels like a recommendation, not an ad.</div>
+      </div>
+      <div class="mk-service">
+        <div class="mk-service-name">Instagram &amp; TikTok Stories</div>
+        <div class="mk-service-price">Starting from $50</div>
+        <div class="mk-service-desc">3-5 story frames featuring your brand with tag or link. High visibility, immediate engagement.</div>
+      </div>
+      <div class="mk-service">
+        <div class="mk-service-name">UGC Content Package</div>
+        <div class="mk-service-price">Starting from $200</div>
+        <div class="mk-service-desc">3-5 original branded content assets delivered directly to you for use on your own platforms. No posting required.</div>
+      </div>
     </div>
-  </div>
-  <div class="mk-package mk-package-featured">
-    <div class="mk-pkg-name">The Wander</div>
-    <div class="mk-pkg-price">From $500</div>
-    <div class="mk-pkg-tag">Best for travel &amp; lifestyle brands</div>
-    <div class="mk-pkg-includes">
-      <span>✦ 1 Dedicated Reel/TikTok</span>
-      <span>✦ Brand mention in organic content</span>
-      <span>✦ 5 Stories</span>
-      <span>✦ 3 UGC assets delivered</span>
+
+    <div class="mk-packages-title">Signature Packages</div>
+    <div class="mk-packages-grid">
+      <div class="mk-package">
+        <div class="mk-pkg-name">The Hidden Gem</div>
+        <div class="mk-pkg-price">From $300</div>
+        <div class="mk-pkg-tag">Best for local businesses &amp; pop-ups</div>
+        <div class="mk-pkg-includes">
+          <span>✦ 1 Dedicated Reel/TikTok</span>
+          <span>✦ 3 Stories</span>
+          <span>✦ Brand tag across platforms</span>
+        </div>
+      </div>
+      <div class="mk-package mk-package-featured">
+        <div class="mk-pkg-name">The Wander</div>
+        <div class="mk-pkg-price">From $500</div>
+        <div class="mk-pkg-tag">Best for travel &amp; lifestyle brands</div>
+        <div class="mk-pkg-includes">
+          <span>✦ 1 Dedicated Reel/TikTok</span>
+          <span>✦ Brand mention in organic content</span>
+          <span>✦ 5 Stories</span>
+          <span>✦ 3 UGC assets delivered</span>
+        </div>
+      </div>
+      <div class="mk-package">
+        <div class="mk-pkg-name">The Full Wit</div>
+        <div class="mk-pkg-price">From $800</div>
+        <div class="mk-pkg-tag">Best for destination campaigns</div>
+        <div class="mk-pkg-includes">
+          <span>✦ 2 Dedicated Reels/TikToks</span>
+          <span>✦ Brand mentions</span>
+          <span>✦ Stories</span>
+          <span>✦ 5 UGC assets</span>
+          <span>✦ Website feature</span>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="mk-package">
-    <div class="mk-pkg-name">The Full Wit</div>
-    <div class="mk-pkg-price">From $800</div>
-    <div class="mk-pkg-tag">Best for destination campaigns</div>
-    <div class="mk-pkg-includes">
-      <span>✦ 2 Dedicated Reels/TikToks</span>
-      <span>✦ Brand mentions</span>
-      <span>✦ Stories</span>
-      <span>✦ 5 UGC assets</span>
-      <span>✦ Website feature</span>
+
+    <div class="mk-addons">
+      <div class="mk-addon">Extended Usage Rights <span>from +$100</span></div>
+      <div class="mk-addon">Rush Delivery <span>from +$50</span></div>
+      <div class="mk-addon">Brand Exclusivity (30 days) <span>from +$150</span></div>
     </div>
-  </div>
-</div>
 
-<div class="mk-addons">
-  <div class="mk-addon">Extended Usage Rights <span>from +$100</span></div>
-  <div class="mk-addon">Rush Delivery <span>from +$50</span></div>
-  <div class="mk-addon">Brand Exclusivity (30 days) <span>from +$150</span></div>
-</div>
+    <div class="mk-cta-row">
+      <a href="mailto:tee@wanderandwit.org" class="mk-btn">Start a Conversation &rarr;</a>
+      <a href="mailto:tee@wanderandwit.org" class="mk-btn mk-btn-ghost">Request Full Media Kit &rarr;</a>
+    </div>
 
-<div class="mk-cta-row">
-  <a href="mailto:tee@wanderandwit.org" class="mk-btn">Start a Conversation →</a>
-  <a href="mailto:tee@wanderandwit.org" class="mk-btn mk-btn-ghost">Request Full Media Kit →</a>
-</div>
-
-<p class="mk-values-note">Wander &amp; Wit partners only with brands that reflect our values of authentic discovery, Black joy, and inclusive experiences.</p>
-```
-
+    <p class="mk-values-note">Wander &amp; Wit partners only with brands that reflect our values of authentic discovery, Black joy, and inclusive experiences.</p>
   </div>
 
 </section>
 
-<!-- ═══ HAPPY HOLIDAY HACKS ═══ -->
-
+<!-- --- HAPPY HOLIDAY HACKS --- -->
 <section class="hhh-section" id="hhh">
   <div class="hhh-stars"></div>
   <div class="hhh-inner">
@@ -1101,14 +1572,14 @@ footer { padding: 3rem 1.5rem 2rem; }
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.55a8.27 8.27 0 004.84 1.56V6.67a4.85 4.85 0 01-1.07.02z"/></svg>
           </div>
           <div class="hhh-li"><div class="hhh-plat">TikTok</div><div class="hhh-handle">@happyholidayhacks</div></div>
-          <span class="hhh-arrow">→</span>
+          <span class="hhh-arrow">&rarr;</span>
         </a>
         <a href="https://www.instagram.com/happyholidayhacks" target="_blank" class="hhh-link">
           <div class="hhh-pi hhh-ig">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg>
           </div>
           <div class="hhh-li"><div class="hhh-plat">Instagram</div><div class="hhh-handle">@happyholidayhacks</div></div>
-          <span class="hhh-arrow">→</span>
+          <span class="hhh-arrow">&rarr;</span>
         </a>
       </div>
     </div>
@@ -1122,7 +1593,6 @@ footer { padding: 3rem 1.5rem 2rem; }
 </section>
 
 <!-- FOLLOW STRIP -->
-
 <section class="follow-strip">
   <div class="follow-inner fade-up">
     <div>
@@ -1132,25 +1602,25 @@ footer { padding: 3rem 1.5rem 2rem; }
     <div class="follow-platforms">
       <a href="https://www.instagram.com/wanderandwit_" target="_blank" class="follow-btn">📷 Instagram</a>
       <a href="https://www.tiktok.com/@wanderandwit_" target="_blank" class="follow-btn">🎵 TikTok</a>
-      <a href="https://www.threads.com/@wanderandwit_" target="_blank" class="follow-btn">◎ Threads</a>
+      <a href="https://www.threads.com/@wanderandwit_" target="_blank" class="follow-btn">&#9678; Threads</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div>
       <a href="#" class="footer-brand">Wander & Wit</a>
-      <p class="footer-tag">Curating the good life — travel, hidden gems, and the wit to make it happen.</p>
+      <p class="footer-tag">Curating the good life - travel, hidden gems, and the wit to make it happen.</p>
       <a href="#hhh" class="footer-hhh"><span class="footer-dot"></span> Happy Holiday Hacks</a>
     </div>
     <div class="footer-col">
       <h4>Explore</h4>
       <ul>
         <li><a href="#wander">Wander</a></li>
-        <li><a href="#hidden-gems">&amp; — Hidden Gems</a></li>
+        <li><a href="#hidden-gems">&amp; - Hidden Gems</a></li>
         <li><a href="#atl-guide">Tee's ATL Guide</a></li>
         <li><a href="#wit">Wit</a></li>
         <li><a href="#hhh">Holiday Hacks</a></li>
@@ -1181,40 +1651,39 @@ footer { padding: 3rem 1.5rem 2rem; }
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Wander & Wit. All rights reserved.</p>
+    <p>&copy; 2025 Wander & Wit. All rights reserved.</p>
     <p class="footer-credit">Branding by <a href="https://barrysuite.com" target="_blank">Barry Suite</a></p>
   </div>
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Scrolled nav
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
 
-// Scrolled nav
-const navbar = document.getElementById(‘navbar’);
-window.addEventListener(‘scroll’, () => navbar.classList.toggle(‘scrolled’, window.scrollY > 60));
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
 
-// Mobile menu
-const hamburger = document.getElementById(‘hamburger’);
-const mobileMenu = document.getElementById(‘mobileMenu’);
-hamburger.addEventListener(‘click’, () => mobileMenu.classList.toggle(‘open’));
-document.querySelectorAll(’.mobile-link’).forEach(l => l.addEventListener(‘click’, () => mobileMenu.classList.remove(‘open’)));
+  // Fade-up - only animate if JS runs, otherwise elements stay visible (opacity:1 default)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 90);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  // Add animate class so they start hidden, then watch them
+  document.querySelectorAll('.fade-up').forEach(el => {
+    el.classList.add('animate');
+    observer.observe(el);
+  });
 
-// Fade-up — only animate if JS runs, otherwise elements stay visible (opacity:1 default)
-const observer = new IntersectionObserver((entries) => {
-entries.forEach((entry, i) => {
-if (entry.isIntersecting) {
-setTimeout(() => entry.target.classList.add(‘visible’), i * 90);
-observer.unobserve(entry.target);
-}
-});
-}, { threshold: 0.08 });
-// Add animate class so they start hidden, then watch them
-document.querySelectorAll(’.fade-up’).forEach(el => {
-el.classList.add(‘animate’);
-observer.observe(el);
-});
-
-// Wander sub-tabs
-function switchTab(btn, id) {
-document.querySelectorAll(’.wander-tab’).forEach(t => t.classList.remove(‘active’));
-btn.classList.add(‘active’);
-[‘tc’,‘tp’,‘dg’].forEach(p => document.getElementById(‘panel-’+p).st
+  // Wander sub-tabs
+  function switchTab(btn, id) {
+    document.querySelectorAll('.wander-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    ['tc','tp','dg'].forEach(p => document.getElementById('panel-'+p).st
